@@ -1,0 +1,1231 @@
+{
+  "source": {
+    "title": "English-Sinhala-Tamil Glossary",
+    "file": "/papers/glossary.pdf",
+    "printedPages": "115-134"
+  },
+  "terms": [
+    {
+      "en": "abstract model",
+      "si": "වියුක්ත ආකෘතිය",
+      "page": 1
+    },
+    {
+      "en": "acceptance testing",
+      "si": "ප්‍රතිග්‍රහණ පරීක්ෂාව",
+      "page": 1
+    },
+    {
+      "en": "access privilege",
+      "si": "ප්‍රවේශ වරප්‍රසාදය",
+      "page": 1
+    },
+    {
+      "en": "agile model",
+      "si": "සුචල ආකෘතිය",
+      "page": 1
+    },
+    {
+      "en": "alternate key",
+      "si": "විකල්ප යතුර",
+      "page": 1
+    },
+    {
+      "en": "amplitude",
+      "si": "විස්තාරය",
+      "page": 1
+    },
+    {
+      "en": "amplitude modulation",
+      "si": "විස්තාර මූර්ජනය",
+      "page": 1
+    },
+    {
+      "en": "analog",
+      "si": "ප්‍රතිසම",
+      "page": 1
+    },
+    {
+      "en": "application layer",
+      "si": "යෙදුම් ස්තරය",
+      "page": 1
+    },
+    {
+      "en": "architecture",
+      "si": "නිර්මිතය",
+      "page": 1
+    },
+    {
+      "en": "arithmetic and logical unit",
+      "si": "අංක ගණිත හා තාර්කික ඒකකය",
+      "page": 1
+    },
+    {
+      "en": "array",
+      "si": "අරාව",
+      "page": 1
+    },
+    {
+      "en": "artificial intelligence",
+      "si": "කෘත්‍රිම බුද්ධිය",
+      "page": 1
+    },
+    {
+      "en": "associative law",
+      "si": "සංඝටන න්‍යාය",
+      "page": 1
+    },
+    {
+      "en": "attribute",
+      "si": "උපලක්ෂණය",
+      "page": 1
+    },
+    {
+      "en": "backups",
+      "si": "උපස්ථ",
+      "page": 2
+    },
+    {
+      "en": "bandwidth",
+      "si": "කලාප පළල",
+      "page": 2
+    },
+    {
+      "en": "batch processing",
+      "si": "කාණ්ඩ සැකසුම",
+      "page": 2
+    },
+    {
+      "en": "big data",
+      "si": "මහා දත්ත",
+      "page": 2
+    },
+    {
+      "en": "binary",
+      "si": "ද්විමය",
+      "page": 2
+    },
+    {
+      "en": "binary coded decimal",
+      "si": "ද්විමය කේතික දශමය",
+      "page": 2
+    },
+    {
+      "en": "black box testing",
+      "si": "කාල මංජුසා පරීක්ෂාව",
+      "page": 2
+    },
+    {
+      "en": "broadcasting",
+      "si": "විකාශනය",
+      "page": 2
+    },
+    {
+      "en": "candidate key",
+      "si": "නිරූපණ යතුර",
+      "page": 3
+    },
+    {
+      "en": "central processing unit",
+      "si": "මධ්‍ය සැකසුම් ඒකකය",
+      "page": 3
+    },
+    {
+      "en": "clock",
+      "si": "ස්පන්දකය",
+      "page": 3
+    },
+    {
+      "en": "cloud computing",
+      "si": "වලාකුළු පරිගණනය",
+      "page": 3
+    },
+    {
+      "en": "coaxial cable",
+      "si": "සමක්ෂක කේබලය",
+      "page": 3
+    },
+    {
+      "en": "code editor",
+      "si": "කේත සංස්කාරක",
+      "page": 3
+    },
+    {
+      "en": "comment",
+      "si": "විවරණය",
+      "page": 3
+    },
+    {
+      "en": "commutative law",
+      "si": "න්‍යාදේශ්‍ය න්‍යාය",
+      "page": 3
+    },
+    {
+      "en": "compiler",
+      "si": "සම්පාදකය",
+      "page": 3
+    },
+    {
+      "en": "composite key",
+      "si": "සංයුක්ත යතුර",
+      "page": 3
+    },
+    {
+      "en": "constant",
+      "si": "නියතය",
+      "page": 3
+    },
+    {
+      "en": "context switching",
+      "si": "සන්දර්භ ස්විචනය",
+      "page": 3
+    },
+    {
+      "en": "control structure",
+      "si": "පාලන ව්‍යුහය",
+      "page": 3
+    },
+    {
+      "en": "control unit",
+      "si": "පාලන ඒකකය",
+      "page": 4
+    },
+    {
+      "en": "data",
+      "si": "දත්ත",
+      "page": 4
+    },
+    {
+      "en": "database management system",
+      "si": "දත්ත සමුදාය කළමනාකරණ පද්ධතිය",
+      "page": 4
+    },
+    {
+      "en": "data definition language",
+      "si": "දත්ත නිර්වචන භාෂාව",
+      "page": 4
+    },
+    {
+      "en": "data dictionary",
+      "si": "දත්ත ශබ්දකෝෂය",
+      "page": 4
+    },
+    {
+      "en": "data flow diagram",
+      "si": "දත්ත ගැලීම් සටහන",
+      "page": 4
+    },
+    {
+      "en": "data link layer",
+      "si": "දත්ත සබැඳි ස්තරය",
+      "page": 4
+    },
+    {
+      "en": "data manipulating language",
+      "si": "දත්ත හැසුරුම් බස",
+      "page": 4,
+      "aliases": [
+        "data manipulation language"
+      ]
+    },
+    {
+      "en": "data migration",
+      "si": "දත්ත පරික්‍රමණය",
+      "page": 4
+    },
+    {
+      "en": "debugging",
+      "si": "නිදොස් කිරීම",
+      "page": 4
+    },
+    {
+      "en": "decision support system",
+      "si": "තීරණ සහාය පද්ධතිය",
+      "page": 4
+    },
+    {
+      "en": "default values",
+      "si": "පෙරනිමි අගය",
+      "page": 4
+    },
+    {
+      "en": "device",
+      "si": "උපාංගය",
+      "page": 4
+    },
+    {
+      "en": "device driver",
+      "si": "උපාංග ධාවක මෘදුකාංගය",
+      "page": 4
+    },
+    {
+      "en": "digital",
+      "si": "අංකිත",
+      "page": 4
+    },
+    {
+      "en": "digital camera",
+      "si": "අංකිත කැමරාව",
+      "page": 5
+    },
+    {
+      "en": "digital economy",
+      "si": "අංකිත ආර්ථිකය",
+      "page": 5
+    },
+    {
+      "en": "digitizer",
+      "si": "සංඛ්‍යාංකකය",
+      "page": 5
+    },
+    {
+      "en": "direct implementation",
+      "si": "සෘජුස්ථාපනය",
+      "page": 5
+    },
+    {
+      "en": "domain",
+      "si": "වසම",
+      "page": 5
+    },
+    {
+      "en": "domain name server",
+      "si": "වසම් නාම සේවාදායකය",
+      "page": 5
+    },
+    {
+      "en": "domain name system",
+      "si": "වසම් නාම පද්ධතිය",
+      "page": 5
+    },
+    {
+      "en": "dynamic web page",
+      "si": "ගතික වෙබ් පිටුව",
+      "page": 5
+    },
+    {
+      "en": "e-commerce",
+      "si": "විද්‍යුත් වාණිජ්‍යය",
+      "page": 5
+    },
+    {
+      "en": "economical feasibility",
+      "si": "ආර්ථික ශක්‍යතාව",
+      "page": 5,
+      "aliases": [
+        "economic feasibility"
+      ]
+    },
+    {
+      "en": "encryption",
+      "si": "ගුප්ත කේතනය",
+      "page": 5
+    },
+    {
+      "en": "enterprise resource planning system",
+      "si": "ව්‍යවසාය සම්පත් සැලසුම් පද්ධතිය",
+      "page": 5
+    },
+    {
+      "en": "entity relationship diagram",
+      "si": "භූතාර්ථ සම්බන්ධතා රූප සටහන",
+      "page": 6,
+      "aliases": [
+        "entity-relationship diagram"
+      ]
+    },
+    {
+      "en": "executive support system",
+      "si": "විධායක සහාය පද්ධතිය",
+      "page": 6
+    },
+    {
+      "en": "expert system",
+      "si": "විශේෂඥ පද්ධතිය",
+      "page": 6
+    },
+    {
+      "en": "feasibility study",
+      "si": "ශක්‍යතා අධ්‍යයනය",
+      "page": 6
+    },
+    {
+      "en": "fetch-execute cycle",
+      "si": "ආහරණ-ක්‍රියාත්මක චක්‍රය",
+      "page": 6
+    },
+    {
+      "en": "fiber optic",
+      "si": "ප්‍රකාශ තන්තු",
+      "page": 6
+    },
+    {
+      "en": "file",
+      "si": "ගොනුව",
+      "page": 6
+    },
+    {
+      "en": "file hierarchy",
+      "si": "ගොනු ධුරාවලිය",
+      "page": 6
+    },
+    {
+      "en": "firewall",
+      "si": "ගිනි පවුර",
+      "page": 6
+    },
+    {
+      "en": "flash memory",
+      "si": "ක්ෂණික මතකය",
+      "page": 6
+    },
+    {
+      "en": "flow chart",
+      "si": "ගැලීම් සටහන",
+      "page": 7,
+      "aliases": [
+        "flowchart"
+      ]
+    },
+    {
+      "en": "folder",
+      "si": "ගොනු බහාලුම",
+      "page": 7
+    },
+    {
+      "en": "foreign key",
+      "si": "ආගන්තුක යතුර",
+      "page": 7
+    },
+    {
+      "en": "frequency modulation",
+      "si": "සංඛ්‍යාත මූර්ජනය",
+      "page": 7
+    },
+    {
+      "en": "full adder",
+      "si": "පූර්ණාකලකය",
+      "page": 7
+    },
+    {
+      "en": "functional dependency",
+      "si": "කාර්ය බද්ධ පරායත්තතාව",
+      "page": 7
+    },
+    {
+      "en": "functional requirement",
+      "si": "කාර්ය බද්ධ අවශ්‍යතාව",
+      "page": 7
+    },
+    {
+      "en": "quantum computing",
+      "si": "ක්වොන්ටම් පරිගණනය",
+      "page": 7
+    },
+    {
+      "en": "genetic algorithm",
+      "si": "සහජ ඇල්ගොරිතමය",
+      "page": 7
+    },
+    {
+      "en": "grid computing",
+      "si": "ජාලක පරිගණනය",
+      "page": 7
+    },
+    {
+      "en": "guided media",
+      "si": "නියමු මාධ්‍ය",
+      "page": 8
+    },
+    {
+      "en": "half adder",
+      "si": "අර්ධාකලකය",
+      "page": 8
+    },
+    {
+      "en": "hard disk",
+      "si": "දෘඪ තැටිය",
+      "page": 8
+    },
+    {
+      "en": "hardware",
+      "si": "දෘඪාංග",
+      "page": 8
+    },
+    {
+      "en": "hexadecimal",
+      "si": "ෂඩ් දශමය",
+      "page": 8
+    },
+    {
+      "en": "hierarchical model",
+      "si": "ධුරාවලි ආකෘතිය",
+      "page": 8
+    },
+    {
+      "en": "host",
+      "si": "සත්කාරකය",
+      "page": 8
+    },
+    {
+      "en": "hub",
+      "si": "නාභිය",
+      "page": 8
+    },
+    {
+      "en": "hyperlink",
+      "si": "අධිසම්බන්ධකය",
+      "page": 8
+    },
+    {
+      "en": "integrated circuits",
+      "si": "අනුකලිත පරිපථ",
+      "page": 8
+    },
+    {
+      "en": "information",
+      "si": "තොරතුරු",
+      "page": 8
+    },
+    {
+      "en": "integrated development environment",
+      "si": "සමෝධානික සංවර්ධන පරිසරය",
+      "page": 8
+    },
+    {
+      "en": "interface",
+      "si": "අතුරු මුහුණත",
+      "page": 9
+    },
+    {
+      "en": "internet service provider",
+      "si": "අන්තර්ජාල සේවා සපයන්නා",
+      "page": 9
+    },
+    {
+      "en": "interpreter",
+      "si": "අර්ථවිනාසකය",
+      "page": 9
+    },
+    {
+      "en": "interrupt",
+      "si": "අතුරු බිඳුම",
+      "page": 9
+    },
+    {
+      "en": "intranet",
+      "si": "අන්තඃජාලය",
+      "page": 9
+    },
+    {
+      "en": "internet of things",
+      "si": "සබැඳි ද්‍රව්‍ය අන්තර්ජාලය",
+      "page": 9
+    },
+    {
+      "en": "iteration",
+      "si": "පුනර්කරණය",
+      "page": 9
+    },
+    {
+      "en": "karnaugh map",
+      "si": "කානෝ සිතියම",
+      "page": 9
+    },
+    {
+      "en": "knowledge management system",
+      "si": "දැනුම කළමනාකරණ පද්ධතිය",
+      "page": 9
+    },
+    {
+      "en": "latency",
+      "si": "ප්‍රමාදය",
+      "page": 9
+    },
+    {
+      "en": "least significant",
+      "si": "අඩුම වෙසෙසි",
+      "page": 9
+    },
+    {
+      "en": "life cycle of data",
+      "si": "දත්ත ජීවන චක්‍රය",
+      "page": 9,
+      "aliases": [
+        "data life cycle"
+      ]
+    },
+    {
+      "en": "linked allocation",
+      "si": "සබැඳි විභාජනය",
+      "page": 9
+    },
+    {
+      "en": "list",
+      "si": "ලැයිස්තුව",
+      "page": 9
+    },
+    {
+      "en": "local area network",
+      "si": "ස්ථානීය ප්‍රදේශ ජාලය",
+      "page": 10
+    },
+    {
+      "en": "logic gate",
+      "si": "තාර්කික ද්වාරය",
+      "page": 10
+    },
+    {
+      "en": "machine code",
+      "si": "යන්ත්‍ර කේතය",
+      "page": 10
+    },
+    {
+      "en": "magnetic tape",
+      "si": "චුම්බක පටිය",
+      "page": 10
+    },
+    {
+      "en": "malware",
+      "si": "අනිෂ්ට මෘදුකාංග",
+      "page": 10
+    },
+    {
+      "en": "management information system",
+      "si": "කළමනාකරණ තොරතුරු පද්ධතිය",
+      "page": 10
+    },
+    {
+      "en": "media access control",
+      "si": "මාධ්‍ය ප්‍රවේශ පාලකය",
+      "page": 10
+    },
+    {
+      "en": "memory management unit",
+      "si": "මතක කළමනාකරණ ඒකකය",
+      "page": 10
+    },
+    {
+      "en": "microprocessor",
+      "si": "ක්ෂුද්‍ර සකසනය",
+      "page": 11
+    },
+    {
+      "en": "microwave",
+      "si": "ක්ෂුද්‍ර තරංග",
+      "page": 11
+    },
+    {
+      "en": "mobile computing",
+      "si": "ජංගම පරිගණනය",
+      "page": 11
+    },
+    {
+      "en": "modulation",
+      "si": "මූර්ජනය",
+      "page": 11
+    },
+    {
+      "en": "most significant",
+      "si": "වැඩිම වෙසෙසි",
+      "page": 11
+    },
+    {
+      "en": "mother board",
+      "si": "මවු පුවරුව",
+      "page": 11,
+      "aliases": [
+        "motherboard"
+      ]
+    },
+    {
+      "en": "multi-core processors",
+      "si": "බහු හර සකසන",
+      "page": 11
+    },
+    {
+      "en": "multiprocessing",
+      "si": "බහු සැකසුම්",
+      "page": 11
+    },
+    {
+      "en": "multitasking",
+      "si": "බහුකාර්ය කිරීම",
+      "page": 11
+    },
+    {
+      "en": "nested loop",
+      "si": "නිහිත ලූපය",
+      "page": 11
+    },
+    {
+      "en": "network architecture",
+      "si": "ජාල නිර්මිතය",
+      "page": 11
+    },
+    {
+      "en": "network layer",
+      "si": "ජාල ස්තරය",
+      "page": 11
+    },
+    {
+      "en": "neural network",
+      "si": "ස්නායුක ජාලය",
+      "page": 12
+    },
+    {
+      "en": "non-functional requirement",
+      "si": "කාර්යබද්ධ නොවන අවශ්‍යතාව",
+      "page": 12
+    },
+    {
+      "en": "normalization",
+      "si": "ප්‍රමතකරණය",
+      "page": 12
+    },
+    {
+      "en": "null",
+      "si": "අභිශූන්‍ය",
+      "page": 12
+    },
+    {
+      "en": "object code",
+      "si": "වස්තු කේතය",
+      "page": 12
+    },
+    {
+      "en": "object oriented",
+      "si": "වස්තු නැඹුරු",
+      "page": 12,
+      "aliases": [
+        "object-oriented"
+      ]
+    },
+    {
+      "en": "octal",
+      "si": "අෂ්ටමය",
+      "page": 12
+    },
+    {
+      "en": "online",
+      "si": "මාර්ගගත",
+      "page": 12
+    },
+    {
+      "en": "open source",
+      "si": "විවෘත මූලාශ්‍ර",
+      "page": 12,
+      "aliases": [
+        "open-source"
+      ]
+    },
+    {
+      "en": "operational feasibility",
+      "si": "මෙහෙයුම් ශක්‍යතාව",
+      "page": 12
+    },
+    {
+      "en": "operator precedence",
+      "si": "කාරක ප්‍රමුඛතාව",
+      "page": 12
+    },
+    {
+      "en": "output",
+      "si": "ප්‍රතිදානය",
+      "page": 12
+    },
+    {
+      "en": "packet switching",
+      "si": "පොදි හුවමාරුව",
+      "page": 12
+    },
+    {
+      "en": "paging",
+      "si": "පිටුකරණය",
+      "page": 12
+    },
+    {
+      "en": "parallel implementation",
+      "si": "සමාන්තර ස්ථාපනය",
+      "page": 13
+    },
+    {
+      "en": "parity",
+      "si": "සමතාව",
+      "page": 13
+    },
+    {
+      "en": "password",
+      "si": "මුර පදය",
+      "page": 13
+    },
+    {
+      "en": "payment gateway",
+      "si": "ගෙවුම් වාසල් ද්වාරය",
+      "page": 13
+    },
+    {
+      "en": "peripheral device",
+      "si": "පර්යන්ත උපාංගය",
+      "page": 13
+    },
+    {
+      "en": "phase modulation",
+      "si": "කලා මූර්ජනය",
+      "page": 13
+    },
+    {
+      "en": "phishing",
+      "si": "තතුබෑම",
+      "page": 13
+    },
+    {
+      "en": "physical layer",
+      "si": "භෞතික ස්තරය",
+      "page": 13
+    },
+    {
+      "en": "physical memory",
+      "si": "භෞතික මතකය",
+      "page": 13
+    },
+    {
+      "en": "pointing device",
+      "si": "දැක්වීමේ උපාංගය",
+      "page": 13
+    },
+    {
+      "en": "port",
+      "si": "කෙවෙනිය",
+      "page": 13
+    },
+    {
+      "en": "power supply",
+      "si": "විදුලි සැපයුම",
+      "page": 14
+    },
+    {
+      "en": "presence check",
+      "si": "තත්සත්‍ය පරීක්ෂාව",
+      "page": 14
+    },
+    {
+      "en": "primary key",
+      "si": "ප්‍රාථමික යතුර",
+      "page": 14
+    },
+    {
+      "en": "primitive data type",
+      "si": "ප්‍රාථමික දත්ත වර්ගය",
+      "page": 14
+    },
+    {
+      "en": "privacy",
+      "si": "පෞද්ගලිකත්වය",
+      "page": 14
+    },
+    {
+      "en": "private key",
+      "si": "පෞද්ගලික යතුර",
+      "page": 14
+    },
+    {
+      "en": "process control block",
+      "si": "ක්‍රියායන පාලන ඛණ්ඩය",
+      "page": 14
+    },
+    {
+      "en": "process management",
+      "si": "ක්‍රියායන කළමනාකරණය",
+      "page": 14
+    },
+    {
+      "en": "process states",
+      "si": "ක්‍රියායන තත්ත්ව",
+      "page": 14
+    },
+    {
+      "en": "program translator",
+      "si": "ක්‍රමලේඛ පරිවර්තක",
+      "page": 14
+    },
+    {
+      "en": "proprietary",
+      "si": "හිමිකම් සහිත",
+      "page": 14
+    },
+    {
+      "en": "protocol",
+      "si": "නියමාවලිය",
+      "page": 14
+    },
+    {
+      "en": "prototyping",
+      "si": "මූලාකෘතිකරණය",
+      "page": 14
+    },
+    {
+      "en": "proxy server",
+      "si": "නියෝජිත සේවාදායකය",
+      "page": 14
+    },
+    {
+      "en": "pseudo code",
+      "si": "ව්‍යාජ කේතය",
+      "page": 14
+    },
+    {
+      "en": "public key",
+      "si": "පොදු යතුර",
+      "page": 15
+    },
+    {
+      "en": "pulse code modulation",
+      "si": "ස්පන්ද කේත මූර්ජනය",
+      "page": 15
+    },
+    {
+      "en": "pulse width modulation",
+      "si": "ස්පන්ද විරාම මූර්ජනය",
+      "page": 15
+    },
+    {
+      "en": "radio button",
+      "si": "විකල්ප තේරීම",
+      "page": 15
+    },
+    {
+      "en": "random access memory",
+      "si": "සසම්භාවී ප්‍රවේශ මතකය",
+      "page": 15
+    },
+    {
+      "en": "range check",
+      "si": "පරාස පරීක්ෂාව",
+      "page": 15
+    },
+    {
+      "en": "read only memory",
+      "si": "පඨන මාත්‍ර මතකය",
+      "page": 15,
+      "aliases": [
+        "read-only memory"
+      ]
+    },
+    {
+      "en": "real time",
+      "si": "තත්‍ය කාලික",
+      "page": 15
+    },
+    {
+      "en": "record",
+      "si": "උපලක්ෂිතය",
+      "page": 15
+    },
+    {
+      "en": "register memory",
+      "si": "රෙජිස්තර මතකය",
+      "page": 15
+    },
+    {
+      "en": "relational model",
+      "si": "සම්බන්ධකම් ආකෘතිය",
+      "page": 15
+    },
+    {
+      "en": "relational database",
+      "si": "සම්බන්ධකම් දත්ත සමුදාය",
+      "page": 15
+    },
+    {
+      "en": "relational schema",
+      "si": "සම්බන්ධකම් පරිපාටි සටහන",
+      "page": 15
+    },
+    {
+      "en": "relationship",
+      "si": "සම්බන්ධතාවය",
+      "page": 16
+    },
+    {
+      "en": "remote",
+      "si": "දුරස්ථ",
+      "page": 16
+    },
+    {
+      "en": "repeater",
+      "si": "පුනර්වර්තකය",
+      "page": 16
+    },
+    {
+      "en": "repetition",
+      "si": "පුනර්කරණය",
+      "page": 16
+    },
+    {
+      "en": "router",
+      "si": "මං හසුරුව",
+      "page": 16
+    },
+    {
+      "en": "routing",
+      "si": "මං හැසිරවීම",
+      "page": 16
+    },
+    {
+      "en": "scanner",
+      "si": "සුපරිලෝකකය",
+      "page": 16
+    },
+    {
+      "en": "scheduler",
+      "si": "නියමකරණය",
+      "page": 16
+    },
+    {
+      "en": "scope of variable",
+      "si": "විචල්‍ය පරාසය",
+      "page": 16
+    },
+    {
+      "en": "query",
+      "si": "විමසුම",
+      "page": 16
+    },
+    {
+      "en": "sensor",
+      "si": "සංවේදකය",
+      "page": 16
+    },
+    {
+      "en": "sequence",
+      "si": "අනුක්‍රමය",
+      "page": 16
+    },
+    {
+      "en": "sequential circuit",
+      "si": "අනුක්‍රමික පරිපථය",
+      "page": 16
+    },
+    {
+      "en": "sequential search",
+      "si": "අනුක්‍රමික සෙවුම",
+      "page": 16
+    },
+    {
+      "en": "server",
+      "si": "සේවාදායකය",
+      "page": 16
+    },
+    {
+      "en": "session layer",
+      "si": "සැසි ස්තරය",
+      "page": 16
+    },
+    {
+      "en": "smart card",
+      "si": "සුහුරු කාඩ්පත",
+      "page": 17
+    },
+    {
+      "en": "smart phone",
+      "si": "සුහුරු දුරකථනය",
+      "page": 17
+    },
+    {
+      "en": "social networking",
+      "si": "සමාජ ජාලකරණය",
+      "page": 17
+    },
+    {
+      "en": "software",
+      "si": "මෘදුකාංග",
+      "page": 17
+    },
+    {
+      "en": "software agent",
+      "si": "මෘදුකාංග කාරක",
+      "page": 17
+    },
+    {
+      "en": "star topology",
+      "si": "තාරකා ස්ථලකය",
+      "page": 17
+    },
+    {
+      "en": "storage",
+      "si": "ආචයනය",
+      "page": 17
+    },
+    {
+      "en": "storage allocation",
+      "si": "ආචයන විභාජනය",
+      "page": 17
+    },
+    {
+      "en": "structure",
+      "si": "ව්‍යුහය",
+      "page": 17
+    },
+    {
+      "en": "structured query language",
+      "si": "ව්‍යුහගත විමසුම් බස",
+      "page": 17
+    },
+    {
+      "en": "subnet mask",
+      "si": "උප ජාල ආවරණය",
+      "page": 17
+    },
+    {
+      "en": "supply chain management",
+      "si": "සැපයුම් දාම කළමනාකරණය",
+      "page": 18
+    },
+    {
+      "en": "swapping",
+      "si": "ප්‍රතිහරණය",
+      "page": 18
+    },
+    {
+      "en": "switch",
+      "si": "ස්විචය",
+      "page": 18
+    },
+    {
+      "en": "syntax",
+      "si": "කාරක රීති",
+      "page": 18
+    },
+    {
+      "en": "system development life cycle",
+      "si": "පද්ධති සංවර්ධන ජීවන චක්‍රය",
+      "page": 18
+    },
+    {
+      "en": "table",
+      "si": "වගුව",
+      "page": 18
+    },
+    {
+      "en": "tag",
+      "si": "උසුලනය",
+      "page": 18
+    },
+    {
+      "en": "technical feasibility",
+      "si": "තාක්ෂණික ශක්‍යතාව",
+      "page": 18
+    },
+    {
+      "en": "testing strategy",
+      "si": "පරීක්ෂණ උපායමාර්ග",
+      "page": 18
+    },
+    {
+      "en": "time sharing",
+      "si": "කාල විභජනය",
+      "page": 18
+    },
+    {
+      "en": "touch screen",
+      "si": "ස්පර්ශක තිරය",
+      "page": 19
+    },
+    {
+      "en": "transaction processing system",
+      "si": "ගනුදෙනු සැකසුම් පද්ධතිය",
+      "page": 19
+    },
+    {
+      "en": "transitive dependency",
+      "si": "සංක්‍රාන්ති පරායත්තතාව",
+      "page": 19
+    },
+    {
+      "en": "transport layer",
+      "si": "ප්‍රවාහන ස්තරය",
+      "page": 19
+    },
+    {
+      "en": "transport protocol",
+      "si": "ප්‍රවාහන නියමාවලිය",
+      "page": 19
+    },
+    {
+      "en": "twisted pair",
+      "si": "ඇඹරී යුගල",
+      "page": 19
+    },
+    {
+      "en": "type check",
+      "si": "ප්‍රරූප පරීක්ෂාව",
+      "page": 19
+    },
+    {
+      "en": "constraint",
+      "si": "සංරෝධකය",
+      "page": 19
+    },
+    {
+      "en": "unit testing",
+      "si": "ඒකක පරීක්ෂාව",
+      "page": 19
+    },
+    {
+      "en": "user",
+      "si": "පරිශීලක",
+      "page": 19
+    },
+    {
+      "en": "validation",
+      "si": "වලංගු කිරීම",
+      "page": 20
+    },
+    {
+      "en": "variable",
+      "si": "විචල්‍යය",
+      "page": 20
+    },
+    {
+      "en": "virtual memory",
+      "si": "අතථ්‍ය මතකය",
+      "page": 20
+    },
+    {
+      "en": "waterfall model",
+      "si": "දියඇලි ආකෘතිය",
+      "page": 20
+    },
+    {
+      "en": "wave length",
+      "si": "තරංග ආයාමය",
+      "page": 20
+    },
+    {
+      "en": "web portal",
+      "si": "වෙබ් ද්වාරය",
+      "page": 20
+    },
+    {
+      "en": "web server",
+      "si": "වෙබ් සේවාදායකය",
+      "page": 20
+    },
+    {
+      "en": "web service provider",
+      "si": "වෙබ් සේවා සැපයුම්කරු",
+      "page": 20
+    },
+    {
+      "en": "white box testing",
+      "si": "ශ්වේත මංජුසා පරීක්ෂාව",
+      "page": 20
+    },
+    {
+      "en": "world wide web",
+      "si": "ලෝක විසිරි වියමන",
+      "page": 20
+    }
+  ]
+}

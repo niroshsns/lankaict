@@ -1,4 +1,5 @@
 import {filterQuestions, shuffle, scoreQuiz, restoreSession, escapeHTML as h} from './core.js';
+import {uiText, localizeQuestion, localizeInterface, glossaryMatches} from './i18n.js';
 
 const icons = {
   book:'<path d="M3 4h6a3 3 0 0 1 3 3v14a4 4 0 0 0-4-2H3z"/><path d="M21 4h-6a3 3 0 0 0-3 3v14a4 4 0 0 1 4-2h5z"/>',
@@ -25,33 +26,35 @@ const icon = (name, cls='') => `<svg class="icon ${cls}" viewBox="0 0 24 24" fil
 const KEY = 'lankaict.v1';
 const app = document.querySelector('#app');
 let bank, session, result = null, storageAvailable = true, listPage = 1, menuOpen = false;
-let page = ['practice','bank','saved','progress','resources'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'practice';
+let page = ['practice','bank','saved','progress','glossary','resources'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'practice';
 let stored;
 try {stored = JSON.parse(localStorage.getItem(KEY) || '{}');} catch {stored = {}; storageAvailable = false;}
 if (!stored || typeof stored !== 'object' || Array.isArray(stored)) stored = {};
+let language = stored.language === 'si' ? 'si' : 'en';
+let glossarySearch = '';
 let saved = Array.isArray(stored.saved) ? stored.saved.filter(id => typeof id === 'string') : [];
 let history = Array.isArray(stored.history) ? stored.history.filter(a => a && typeof a === 'object' && Array.isArray(a.ids) && a.answers && typeof a.answers === 'object' && Number.isFinite(a.finishedAt)).slice(0,100) : [];
 let filters = {year:'all', topic:'all', source:'all', search:'', savedOnly:false};
 let size = 10, mode = 'practice', randomize = true;
 
 function persist() {
-  try {localStorage.setItem(KEY, JSON.stringify({saved, history, session}));}
+  try {localStorage.setItem(KEY, JSON.stringify({saved, history, session, language}));}
   catch {storageAvailable = false;}
 }
 function toast(message) {
   const el = document.querySelector('#toast');
-  el.textContent = message;
+  el.textContent = uiText(message,language);
   el.classList.add('show');
   clearTimeout(toast.timeout);
   toast.timeout = setTimeout(() => el.classList.remove('show'), 2800);
 }
 const topic = id => bank.topics.find(t => t.id === id);
 const questions = () => session.ids.map(id => bank.questions.find(q => q.id === id)).filter(Boolean);
-const current = () => questions()[session.index];
+const current = () => localizeQuestion(questions()[session.index],language);
 const sourceLabel = q => q.source === 'additional' ? 'Extra practice' : `${q.year} past paper`;
 const answerLabel = q => ({official:'Official answer',worked:'Worked answer',authored:'Practice answer','needs-review':'Answer needs review'}[q.answerStatus]);
 const matched = () => filterQuestions(bank.questions, filters, saved);
-const date = value => new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric'}).format(new Date(value));
+const date = value => new Intl.DateTimeFormat(language==='si'?'si-LK':'en-GB',{day:'numeric',month:'short',year:'numeric'}).format(new Date(value));
 const clock = seconds => `${Math.floor(Math.max(0,seconds)/60).toString().padStart(2,'0')}:${Math.floor(Math.max(0,seconds)%60).toString().padStart(2,'0')}`;
 function elapsed() {return Math.max(0, Math.floor((Date.now() - session.startedAt)/1000));}
 function timerText() {return clock(session.mode === 'exam' ? Math.max(0, session.ids.length * 144 - elapsed()) : elapsed());}
@@ -94,7 +97,7 @@ function bookmark(q, compact=false) {
 }
 
 function shell(content) {
-  const navigation = [['practice','practice','Practice'],['bank','grid','Question bank'],['saved','bookmark','Saved questions'],['progress','chart','My progress'],['resources','folder','Source papers']];
+  const navigation = [['practice','practice','Practice'],['bank','grid','Question bank'],['saved','bookmark','Saved questions'],['progress','chart','My progress'],['glossary','book','ICT glossary'],['resources','folder','Source papers']];
   return `<div class="layout ${menuOpen?'menu-open':''}">
     <aside class="sidebar" aria-label="Main navigation">
       <a class="brand" href="#practice"><span class="brand-mark">${icon('book')}</span><span>Lanka<span class="brand-ict">ICT</span><small>LEARN. PRACTISE. PROGRESS.</small></span></a>
@@ -104,7 +107,7 @@ function shell(content) {
       <div class="sidebar-bottom"><span class="flag"><i></i><i></i><i></i></span><span>Made for Sri Lankan<br><strong>A/L ICT students</strong></span></div>
     </aside>
     <div class="workspace">
-      <header class="topbar"><div class="topbar-left"><button class="icon-button mobile-menu" data-action="menu" aria-label="Toggle navigation" aria-expanded="${menuOpen}">${icon('menu')}</button><span>G.C.E. Advanced Level</span><span class="topbar-dot">/</span><strong>Information & Communication Technology</strong></div><div class="learner"><span class="medium-label">English medium</span><span class="avatar">AL</span></div></header>
+      <header class="topbar"><div class="topbar-left"><button class="icon-button mobile-menu" data-action="menu" aria-label="Toggle navigation" aria-expanded="${menuOpen}">${icon('menu')}</button><span>G.C.E. Advanced Level</span><span class="topbar-dot">/</span><strong>Information & Communication Technology</strong></div><div class="learner"><span class="medium-label">${language==='si'?'Sinhala study translation':'English medium'}</span><label class="language-control"><span class="sr-only">Language</span><select id="language-select" aria-label="Language"><option value="en" lang="en" ${language==='en'?'selected':''}>English</option><option value="si" lang="si" ${language==='si'?'selected':''}>සිංහල</option></select></label><span class="avatar">AL</span></div></header>
       <main id="main" tabindex="-1">${content}</main>
       <footer><span>Build your confidence, one question at a time.</span><span>${icon('info')} ${storageAvailable?'Progress is saved on this device':'Browser storage unavailable · progress will not be saved'}</span></footer>
     </div>
@@ -141,6 +144,7 @@ function activeSession() {
     <div class="question-meta"><div><span class="badge paper">${sourceLabel(q)}</span><span class="badge topic">${h(topic(q.topic).short)}</span>${q.answerStatus==='needs-review'?'<span class="badge warning">Needs review · not graded</span>':''}</div>${bookmark(q)}</div>
     <div class="question-index">QUESTION ${String(session.index+1).padStart(2,'0')} <span>OF ${String(session.ids.length).padStart(2,'0')}</span><span class="original-number">${q.source==='past-paper'?`Paper Q${q.number}`:'Additional practice'}</span></div>
     <h3 id="question-title" tabindex="-1">${h(q.prompt)}</h3>
+    ${language==='si'?`<p class="translation-note">${icon('info')}${q.isTranslated?'Study translation · compare with the English original.':'Translation not yet available. The English text is shown.'}</p>`:''}
     ${q.figure?`<figure class="question-figure"><img src="${h(q.figure)}" alt="Original question ${q.number} diagram, table or code, with its surrounding context" loading="lazy"><figcaption>Original paper excerpt · ${q.year}, question ${q.number}</figcaption></figure>`:''}
     <fieldset class="answers"><legend class="sr-only">Choose one answer</legend>${q.options.map((option,i)=>{
       const number=i+1;
@@ -148,6 +152,7 @@ function activeSession() {
       const wrong=checked&&verified&&number===selected&&number!==q.answer;
       return `<label class="answer-option ${selected===number?'chosen':''} ${correct?'correct':''} ${wrong?'incorrect':''}"><input type="radio" name="answer" value="${number}" ${selected===number?'checked':''} ${checked?'disabled':''}><span class="option-key">${number}</span><span class="option-text">${h(option)}</span>${correct?icon('check'):wrong?icon('close'):'<span class="radio-circle"></span>'}</label>`;
     }).join('')}</fieldset>
+    ${questionLanguageTools(q)}
     ${checked?`<div class="feedback ${!verified?'review':selected===q.answer?'success':'correction'}" role="status"><strong>${icon(!verified?'info':selected===q.answer?'check':'book')}${!verified?'This answer needs a teacher’s review':selected===q.answer?'That’s right. Nicely done!':`Let’s work through this. Answer ${q.answer} is correct.`}</strong><p>${h(q.explanation)}</p><span>${answerLabel(q)}${q.answerStatus==='worked'?' · Independently solved; not an official marking key':''}</span></div>`:''}
     <div class="question-actions"><button class="button quiet" data-action="previous" ${session.index===0?'disabled':''}>${icon('left')} Previous</button><div>${!checked&&session.index<session.ids.length-1?'<button class="button quiet skip" data-action="next">Skip for now</button>':''}${session.mode==='practice'&&!checked?`<button class="button primary" data-action="check" ${!selected?'disabled':''}>Check answer ${icon('check')}</button>`:`<button class="button primary" data-action="${session.index===session.ids.length-1?'finish':'next'}">${session.index===session.ids.length-1?'Finish session':'Next question'} ${icon('arrow')}</button>`}</div></div>
     <div class="question-footnote"><span>${icon('info')} ${session.mode==='exam'?'You can change any answer until you finish.':'Tip: use keys 1–5 to select an answer, then Enter to check.'}</span>${sourceDetails(q)}</div>
@@ -164,11 +169,18 @@ function sourceDetails(q) {
   return `<details class="source-details"><summary>View original ${icon('external')}</summary><div>${q.sourceImage?`<img src="${h(q.sourceImage)}" alt="Original scan of ${q.year} question ${q.number}" loading="lazy">`:''}<a href="/papers/${q.year}mcq.pdf#page=${q.page}" target="_blank" rel="noopener">Open ${q.year} paper · page ${q.page} ${icon('external')}</a></div></details>`;
 }
 
+function questionLanguageTools(q,reveal=false) {
+  const original=bank.questions.find(item=>item.id===q.id);
+  const terms=glossaryMatches(original,bank.glossary?.terms||[]);
+  const showExplanation=reveal||session?.mode==='practice'&&session.checked.includes(q.id);
+  return `<div class="question-language-tools">${language==='si'?`<details class="english-original"><summary>English original ${icon('book')}</summary><div lang="en" data-question-content><p>${h(original.prompt)}</p><ol>${original.options.map(option=>`<li>${h(option)}</li>`).join('')}</ol>${showExplanation?`<p>${h(original.explanation)}</p>`:''}</div></details>`:''}${terms.length?`<details class="question-terms"><summary>Key ICT terms ${icon('book')}</summary><dl>${terms.map(term=>`<div><dt lang="en">${h(term.en)}</dt><dd lang="si">${h(term.si)}</dd></div>`).join('')}</dl><a href="/papers/glossary.pdf" target="_blank" rel="noopener">Open supplied glossary ${icon('external')}</a></details>`:''}</div>`;
+}
+
 function bankView(savedOnly = false) {
   filters.savedOnly = savedOnly;
   const filtered=matched(), perPage=12, pages=Math.max(1,Math.ceil(filtered.length/perPage));
   listPage=Math.min(listPage,pages);
-  const items=filtered.slice((listPage-1)*perPage,listPage*perPage);
+  const items=filtered.slice((listPage-1)*perPage,listPage*perPage).map(q=>localizeQuestion(q,language));
   return `<section class="page-heading"><div class="eyebrow">${savedOnly?'KEEP THE GOOD QUESTIONS CLOSE':'YOUR REVISION LIBRARY'}</div><h1>${savedOnly?'Saved questions':'The question bank'}<span class="title-dot">.</span></h1><p>${savedOnly?'Come back to the questions you want to spend a little more time with.':'Three past papers. More ways to practise. Find a question and make it click.'}</p></section>${filterPanel()}
   <div class="section-heading bank-list-heading"><h2>${filtered.length} ${savedOnly?'saved ':''}${filtered.length===1?'question':'questions'}</h2><button class="button primary small" data-action="practice-filtered" ${!filtered.length?'disabled':''}>Practise these ${icon('arrow')}</button></div>
   <div class="bank-list">${items.length?items.map(q=>`<article class="bank-item"><div class="bank-item-top"><span class="bank-number">${h(q.id)}</span><span class="badge paper">${sourceLabel(q)}</span><span class="badge topic">${h(topic(q.topic).short)}</span>${q.answerStatus==='needs-review'?'<span class="badge warning">Needs review</span>':''}${bookmark(q,true)}</div><h3>${h(q.prompt)}</h3><div class="bank-item-bottom"><span>5 answer choices ${q.figure?'· Includes a figure':''}</span><button class="text-link" data-action="open-question" data-id="${h(q.id)}">Practise question ${icon('arrow')}</button></div></article>`).join(''):`<div class="empty-state">${icon(savedOnly?'bookmark':'search')}<h2>${savedOnly&&!saved.length?'A place for your tricky questions':'No questions found'}</h2><p>${savedOnly&&!saved.length?'Save a question with the bookmark button and find it here.':'Try a different year, topic or search term.'}</p><button class="button outline" data-action="reset-filters">${savedOnly&&!saved.length?'Browse question bank':'Clear filters'}</button></div>`}</div>
@@ -186,7 +198,7 @@ function finishSession(timedOut = false) {
   window.scrollTo({top:0,behavior:'smooth'});
 }
 function resultsView() {
-  const qs=result.ids.map(id=>bank.questions.find(q=>q.id===id)).filter(Boolean);
+  const qs=result.ids.map(id=>bank.questions.find(q=>q.id===id)).filter(Boolean).map(q=>localizeQuestion(q,language));
   const s=scoreQuiz(qs,result.answers);
   const incorrect=qs.filter(q=>Number.isInteger(q.answer)&&q.answerStatus!=='needs-review'&&result.answers[q.id]!==q.answer);
   return `<section class="page-heading"><div class="eyebrow">ANOTHER STEP FORWARD</div><h1>${result.timedOut?'Time’s up. Let’s review.':'Practice makes progress'}<span class="title-dot">.</span></h1><p>${h(result.label)} · ${date(result.finishedAt)} · ${clock(result.duration||0)}</p></section>
@@ -194,7 +206,7 @@ function resultsView() {
   <div class="notice">${icon('info')}<p>Past paper answers are independently worked, unless labelled official. Questions awaiting review are excluded from the score. Additional questions are original practice material.</p></div>
   <div class="section-heading"><h2>Your answer review</h2><span class="muted">${qs.length} ${qs.length===1?'question':'questions'}</span></div><div class="review-list">${qs.map((q,i)=>{
     const a=result.answers[q.id], verified=Number.isInteger(q.answer)&&q.answerStatus!=='needs-review', good=a===q.answer&&verified;
-    return `<details class="review-item"><summary><span class="review-status ${!a?'unanswered':!verified?'pending':good?'right':'wrong'}">${!a?'—':!verified?'?':good?icon('check'):icon('close')}</span><span><small>${i+1}. ${sourceLabel(q)} · ${h(topic(q.topic).short)}</small><strong>${h(q.prompt)}</strong></span>${icon('left','chevron')}</summary><div class="review-detail">${q.figure?`<img class="review-figure" src="${h(q.figure)}" alt="Question figure">`:''}<ol>${q.options.map((o,n)=>`<li class="${verified&&n+1===q.answer?'correct-text':''}">${h(o)} ${a===n+1?'<span class="badge">Your answer</span>':''}${verified&&n+1===q.answer?' <strong>✓ Correct</strong>':''}</li>`).join('')}</ol><div class="review-explanation"><strong>${answerLabel(q)}</strong><p>${h(q.explanation)}</p></div>${bookmark(q)}${sourceDetails(q)}</div></details>`;
+    return `<details class="review-item"><summary><span class="review-status ${!a?'unanswered':!verified?'pending':good?'right':'wrong'}">${!a?'—':!verified?'?':good?icon('check'):icon('close')}</span><span><small>${i+1}. ${sourceLabel(q)} · ${h(topic(q.topic).short)}</small><strong>${h(q.prompt)}</strong></span>${icon('left','chevron')}</summary><div class="review-detail">${q.figure?`<img class="review-figure" src="${h(q.figure)}" alt="Question figure">`:''}<ol>${q.options.map((o,n)=>`<li class="${verified&&n+1===q.answer?'correct-text':''}"><span data-question-content>${h(o)}</span> ${a===n+1?'<span class="badge">Your answer</span>':''}${verified&&n+1===q.answer?' <strong>✓ Correct</strong>':''}</li>`).join('')}</ol><div class="review-explanation"><strong>${answerLabel(q)}</strong><p>${h(q.explanation)}</p></div>${questionLanguageTools(q,true)}${bookmark(q)}${sourceDetails(q)}</div></details>`;
   }).join('')}</div>`;
 }
 
@@ -210,17 +222,26 @@ function progressView() {
   }).join('')}</section><section class="panel history-panel"><div class="section-heading"><h2>Recent sessions</h2></div>${attempts.length?attempts.slice(0,20).map((a,i)=>`<button class="history-item" data-action="history" data-index="${i}"><span class="history-icon">${icon(a.mode==='exam'?'clock':'book')}</span><span><strong>${h(a.label)}</strong><small>${date(a.finishedAt)} · ${a.ids.length} questions</small></span><strong class="history-score">${a.score.possible ? `${a.score.percent}%` : "—"}</strong>${icon('arrow')}</button>`).join(''):`<div class="empty-state compact-empty">${icon('chart')}<h3>Your story starts with a session</h3><p>Finish a practice session to see your progress here.</p><a href="#practice" class="button primary">Let’s practise ${icon('arrow')}</a></div>`}</section></div><div class="notice">${icon('info')}<p>Progress is stored in this browser. It does not sync between devices. Overall scores include unanswered graded questions in completed sessions.</p></div>`;
 }
 
+function glossaryView() {
+  const term=glossarySearch.trim().toLocaleLowerCase().normalize('NFC');
+  const items=(bank.glossary?.terms||[]).filter(item=>[item.en,item.si,...(item.aliases||[])].join(' ').toLocaleLowerCase().normalize('NFC').includes(term));
+  return `<section class="page-heading"><div class="eyebrow">ICT TERMS, IN BOTH LANGUAGES</div><h1>Your ICT word companion<span class="title-dot">.</span></h1><p>Selected terms adapted from the supplied English–Sinhala–Tamil glossary. The original PDF includes additional terms and Tamil equivalents.</p></section><section class="panel glossary-panel"><div class="glossary-toolbar"><label for="glossary-search">Search glossary<input type="search" id="glossary-search" value="${h(glossarySearch)}" placeholder="English or Sinhala term…" autocomplete="off"></label><a class="button outline" href="/papers/glossary.pdf" target="_blank" rel="noopener">Open supplied glossary ${icon('external')}</a></div><div class="section-heading"><h2>Selected glossary terms</h2><span class="muted">${items.length} terms</span></div><div class="glossary-table-wrap"><table class="glossary-table"><thead><tr><th scope="col">English term</th><th scope="col">Sinhala term</th><th scope="col">Source page</th></tr></thead><tbody>${items.map(item=>`<tr><td lang="en">${h(item.en)}</td><td lang="si">${h(item.si)}</td><td><a href="/papers/glossary.pdf#page=${item.page}" target="_blank" rel="noopener">PDF page ${item.page}</a></td></tr>`).join('')}</tbody></table>${!items.length?'<p class="empty-glossary">No glossary terms found.</p>':''}</div></section>`;
+}
+
 function resourcesView() {
   const reviewCount=bank.questions.filter(q=>q.answerStatus==='needs-review').length;
   return `<section class="page-heading"><div class="eyebrow">BACK TO THE ORIGINALS</div><h1>The source papers<span class="title-dot">.</span></h1><p>The three papers behind this question bank, kept close for reference.</p></section><div class="paper-cards">${bank.papers.map(p=>`<article class="paper-card"><div class="paper-cover"><span>G.C.E. ADVANCED LEVEL</span><strong>${p.year}</strong><div>Information &<br>Communication Technology</div><span>PAPER I · ENGLISH</span>${icon('book')}</div><div class="paper-content"><h2>${p.year} ICT MCQ paper</h2><p>50 questions · 5 choices per question</p><a class="button outline full" href="${h(p.file)}" target="_blank" rel="noopener">Open original PDF ${icon('external')}</a><button class="text-link" data-action="paper" data-year="${p.year}">Practise this paper ${icon('arrow')}</button></div></article>`).join('')}</div>
-  <div class="resource-notes"><section class="panel"><h2>A note on the answers</h2><p>The supplied files contain the question papers, without a separate official answer key. Past paper answers and explanations are independently worked and labelled accordingly.</p><p><strong>${reviewCount} questions need review</strong> because the wording or available options are ambiguous. They can be studied, but do not contribute to your score.</p><p>The 2025 file includes a marking-scheme header; that header alone is not an official answer key. A teacher should review the bank before high-stakes assessment.</p></section><section class="panel"><h2>Built for focused revision</h2><p>Questions are grouped into ${bank.topics.length} topic areas for easier revision. The categories are a study aid, rather than a claim of exact syllabus unit mapping.</p><p>Extra practice questions are newly authored and clearly separated from past papers. Original scans are available beside transcribed questions so you can check diagrams, notation and wording.</p><p>Source papers belong to their respective rights holders. Keep their original attribution when sharing.</p><a href="/data/question-bank.json" download="lanka-ict-question-bank.json" class="text-link">Download the JSON question bank ${icon('download')}</a></section></div>`;
+  <div class="resource-notes"><section class="panel"><h2>A note on the answers</h2><p>The supplied files contain the question papers, without a separate official answer key. Past paper answers and explanations are independently worked and labelled accordingly.</p><p><strong>${reviewCount} questions need review</strong> because the wording or available options are ambiguous. They can be studied, but do not contribute to your score.</p><p>The 2025 file includes a marking-scheme header; that header alone is not an official answer key. A teacher should review the bank before high-stakes assessment.</p></section><section class="panel"><h2>Built for focused revision</h2><p>Questions are grouped into ${bank.topics.length} topic areas for easier revision. The categories are a study aid, rather than a claim of exact syllabus unit mapping.</p><p>Extra practice questions are newly authored and clearly separated from past papers. Original scans are available beside transcribed questions so you can check diagrams, notation and wording.</p><p>Source papers belong to their respective rights holders. Keep their original attribution when sharing.</p><a href="/data/question-bank.json" download="lanka-ict-question-bank.json" class="text-link">Download the JSON question bank ${icon('download')}</a></section><section class="panel"><h2>English / සිංහල</h2><p>Sinhala translations are study aids prepared with Google Translate and selected glossary terms. Code, identifiers and formulas remain in their original form. Compare any uncertain wording with the English original.</p><a href="#glossary" class="text-link">ICT glossary ${icon('arrow')}</a></section></div>`;
 }
 
 function render() {
   if (!bank) return;
   filters.savedOnly=page==='saved';
-  app.innerHTML=shell(page==='practice'?practiceView():page==='bank'?bankView():page==='saved'?bankView(true):page==='progress'?progressView():resourcesView());
-  document.title=`${{practice:'Practice',bank:'Question bank',saved:'Saved questions',progress:'My progress',resources:'Source papers'}[page]} · Lanka ICT`;
+  app.innerHTML=shell(page==='practice'?practiceView():page==='bank'?bankView():page==='saved'?bankView(true):page==='progress'?progressView():page==='glossary'?glossaryView():resourcesView());
+  document.documentElement.lang=language;
+  document.querySelector('.skip-link').textContent=uiText('Skip to content',language);
+  localizeInterface(app,language);
+  document.title=`${uiText({practice:'Practice',bank:'Question bank',saved:'Saved questions',progress:'My progress',resources:'Source papers',glossary:'ICT glossary'}[page],language)} · Lanka ICT`;
 }
 
 app.addEventListener('click', e=>{
@@ -260,6 +281,11 @@ app.addEventListener('click', e=>{
 
 app.addEventListener('change', e=>{
   const el=e.target;
+  if(el.id==='language-select'){
+    const previousTop=window.scrollY;
+    language=el.value==='si'?'si':'en';persist();render();
+    window.scrollTo(0,previousTop);document.querySelector('#language-select')?.focus({preventScroll:true});return;
+  }
   if(['year-filter','topic-filter','source-filter'].includes(el.id)){
     filters[el.name]=el.value;
     if(el.id==='source-filter'&&el.value==='additional')filters.year='all';
@@ -272,6 +298,11 @@ app.addEventListener('change', e=>{
 });
 let searchTimer;
 app.addEventListener('input',e=>{
+  if(e.target.id==='glossary-search'){
+    const value=e.target.value;
+    clearTimeout(searchTimer);
+    searchTimer=setTimeout(()=>{glossarySearch=value;render();document.querySelector('#glossary-search')?.focus({preventScroll:true});},180);return;
+  }
   if(e.target.id!=='search-filter')return;
   const value=e.target.value,position=e.target.selectionStart;
   clearTimeout(searchTimer);
@@ -289,7 +320,7 @@ document.addEventListener('keydown',e=>{
     document.querySelector(`[data-action="${action}"]`)?.click();e.preventDefault();
   }
 });
-window.addEventListener('hashchange',()=>{const next=location.hash.slice(1);if(['practice','bank','saved','progress','resources'].includes(next))navigate(next);});
+window.addEventListener('hashchange',()=>{const next=location.hash.slice(1);if(['practice','bank','saved','progress','glossary','resources'].includes(next))navigate(next);});
 window.addEventListener('pagehide',persist);
 setInterval(()=>{
   if(!session||result)return;

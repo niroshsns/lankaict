@@ -7,7 +7,7 @@ export function filterQuestions(questions, filters = {}, saved = []) {
     (!filters.topic || filters.topic === 'all' || q.topic === filters.topic) &&
     (!filters.source || filters.source === 'all' || q.source === filters.source) &&
     (!filters.savedOnly || bookmarks.has(q.id)) &&
-    (!term || [q.prompt, ...q.options, q.id, String(q.year ?? 'additional')].join(' ').toLocaleLowerCase().includes(term))
+    (!term || [q.prompt, ...q.options, q.translations?.si?.prompt || '', ...(q.translations?.si?.options || []), q.id, String(q.year ?? 'additional')].join(' ').toLocaleLowerCase().includes(term))
   );
 }
 

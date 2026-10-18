@@ -4,6 +4,10 @@ A revision app for Sri Lankan G.C.E. A/L ICT students: 150 MCQs transcribed from
 
 Students can filter by year, topic and question source; practise with explanations; take a timed test; save questions; resume a session; and review their results. Original question scans, diagrams and complete source PDFs are available alongside the transcriptions.
 
+The header's **English / සිංහල** selector switches the interface, questions, choices and explanations. The language preference is saved on this device, and switching keeps the current answers and session. All 210 questions include Sinhala study translations prepared with Google Translate and selected terminology from the supplied glossary. They are drafts for revision; compare uncertain wording with the English original available under each question. Original diagrams and source scans remain in English.
+
+The **ICT glossary** page has 239 selected English–Sinhala terms, searchable in either language, with links to their pages in the supplied PDF. Relevant glossary terms also appear below each question. Translations are stored locally in JSON: the website does not call a translation service at runtime and needs no API key.
+
 The app uses HTML, CSS and JavaScript with a JSON question bank. Node.js builds and serves the site locally. Production hosting only needs the static `dist/` directory.
 
 ## Run locally
@@ -38,6 +42,9 @@ The development server has no file watcher. After editing source files, run `npm
 | `data/2023.json`, `data/2024.json`, `data/2025.json` | 50 questions from each paper |
 | `data/additional.json` | Newly authored questions |
 | `data/topics.json` | Topic identifiers and display names |
+| `data/sinhala.json` | Sinhala prompts, five ordered choices and explanations keyed by question ID |
+| `data/glossary.json` | Selected bilingual glossary terms with source PDF pages |
+| `data/si-overrides.json` | Local corrections used by the one-time translation importer |
 | `scripts/` | Build, validation and local HTTP server |
 | `tests/` | Automated data and quiz-behaviour checks |
 | `dist/` | Generated deployment output; edit the source files instead |
@@ -70,6 +77,10 @@ Keep IDs unique, provide exactly five nonempty options, and use a topic ID from 
 Use `answerStatus: "worked"` for an independently solved paper answer. If the wording, scan or options do not support a reliable answer, set `answer: null` and `answerStatus: "needs-review"`, and explain the issue. These questions remain available for study and are excluded from scoring. Reserve `"official"` for an answer checked against an actual official marking key.
 
 For new practice questions, edit `data/additional.json`, use `source: "additional"`, `year: null`, and `answerStatus: "authored"`. Preserve the complete 1-50 sequence for each paper. Run `npm test` and `npm run build` after changes.
+
+Every question must also have an entry in `data/sinhala.json` under the same ID, containing `prompt`, `options` (five choices in the same order), `explanation`, `status: "study-draft"`, and `sourceHash`. Keep code, identifiers and mathematical notation intact. The hash is SHA-256 of `JSON.stringify([question.prompt, question.options, question.explanation])` from the English entry; update it only after reviewing the Sinhala against the changed English. Validation rejects missing or stale translations. Editing only Sinhala wording does not require changing the hash. Answer keys and scoring remain in the English source entry and are shared between languages.
+
+`scripts/prepare-sinhala.mjs` and `scripts/import-sinhala.mjs` are one-time preparation/import utilities using ignored files under `tmp/translation/`. They are not needed to run or deploy the app. If translations are reimported, keep reviewed corrections in `data/si-overrides.json` as well as the final translation file.
 
 ## Sources and answer accuracy
 
