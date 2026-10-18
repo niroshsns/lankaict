@@ -1,0 +1,1012 @@
+[
+  {
+    "id": "2025-01",
+    "year": 2025,
+    "number": 1,
+    "source": "past-paper",
+    "topic": "ict-fundamentals",
+    "prompt": "Which of the following best represents the typical life cycle of data?",
+    "options": [
+      "collection → processing → usage → archival → deletion",
+      "collection → usage → processing → deletion → archival",
+      "processing → collection → usage → deletion → archival",
+      "processing → archival → collection → usage → deletion",
+      "usage → archival → collection → deletion → processing"
+    ],
+    "answer": 1,
+    "explanation": "Data is collected, processed and used, then archived and ultimately deleted.",
+    "answerStatus": "worked",
+    "page": 1,
+    "sourceImage": "/questions/2025/q01.png"
+  },
+  {
+    "id": "2025-02",
+    "year": 2025,
+    "number": 2,
+    "source": "past-paper",
+    "topic": "ict-fundamentals",
+    "prompt": "Which of the following is a characteristic of open-source software?",
+    "options": [
+      "Limited customizations",
+      "Reliance on vendor for updates",
+      "Usage restricted by the owner",
+      "Source code not being publicly available",
+      "Being usually free to acquire and use"
+    ],
+    "answer": 5,
+    "explanation": "Open-source software makes its source available and is commonly free to acquire and use; the other options contradict its usual characteristics.",
+    "answerStatus": "worked",
+    "page": 1,
+    "sourceImage": "/questions/2025/q02.png"
+  },
+  {
+    "id": "2025-03",
+    "year": 2025,
+    "number": 3,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "An online examination system is to alert students if they leave any mandatory questions unanswered before submission of their answers. Which data validation techniques are sufficient for this requirement?",
+    "options": [
+      "Data type check only",
+      "Data type check and presence check only",
+      "Data type check and range check only",
+      "Presence check only",
+      "Range check only"
+    ],
+    "answer": 4,
+    "explanation": "A presence check detects whether a mandatory answer has been supplied.",
+    "answerStatus": "worked",
+    "page": 1,
+    "sourceImage": "/questions/2025/q03.png"
+  },
+  {
+    "id": "2025-04",
+    "year": 2025,
+    "number": 4,
+    "source": "past-paper",
+    "topic": "computer-systems",
+    "prompt": "Which of the following best describes a pointing device?",
+    "options": [
+      "It is used to control an indicator on the display.",
+      "It is used to digitize a scene.",
+      "It is used to identify characters.",
+      "It is used to read codes.",
+      "It is used to select images."
+    ],
+    "answer": 1,
+    "explanation": "A pointing device controls the on-screen pointer or indicator.",
+    "answerStatus": "worked",
+    "page": 1,
+    "sourceImage": "/questions/2025/q04.png"
+  },
+  {
+    "id": "2025-05",
+    "year": 2025,
+    "number": 5,
+    "source": "past-paper",
+    "topic": "computer-systems",
+    "prompt": "Which of the following is a secondary storage device in which the data is written in a sequential manner and can be read from in a random manner?",
+    "options": [
+      "CD-R",
+      "CD-ROM",
+      "Magnetic tape",
+      "Solid State Drive",
+      "USB flash drive"
+    ],
+    "answer": 1,
+    "explanation": "A CD-R is recorded sequentially, while recorded data can be accessed directly during reading.",
+    "answerStatus": "worked",
+    "page": 1,
+    "sourceImage": "/questions/2025/q05.png"
+  },
+  {
+    "id": "2025-06",
+    "year": 2025,
+    "number": 6,
+    "source": "past-paper",
+    "topic": "computer-systems",
+    "prompt": "Which of the following communication buses are involved in reading a data word from Main Memory?\nA – Address Bus\nB – Control Bus\nC – Data Bus",
+    "options": [
+      "A only",
+      "B only",
+      "C only",
+      "A and C only",
+      "All A, B and C"
+    ],
+    "answer": 5,
+    "explanation": "The address bus selects a location, the control bus signals a read, and the data bus transfers the word.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2025/q06.png"
+  },
+  {
+    "id": "2025-07",
+    "year": 2025,
+    "number": 7,
+    "source": "past-paper",
+    "topic": "computer-systems",
+    "prompt": "While an instruction is being executed in the Central Processing Unit, that instruction and the relevant data are stored in the",
+    "options": [
+      "address bus.",
+      "arithmetic and logic unit.",
+      "control unit.",
+      "data bus.",
+      "registers."
+    ],
+    "answer": 5,
+    "explanation": "CPU registers hold the current instruction, operands and intermediate results during execution.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2025/q07.png"
+  },
+  {
+    "id": "2025-08",
+    "year": 2025,
+    "number": 8,
+    "source": "past-paper",
+    "topic": "computer-systems",
+    "prompt": "If writing a 64-bit data word to a random-access memory takes 0.625 ns, how long will it take to read the same word back under the same conditions?",
+    "options": [
+      "0.156 ns",
+      "0.312 ns",
+      "0.625 ns",
+      "1.250 ns",
+      "2.500 ns"
+    ],
+    "answer": 3,
+    "explanation": "Under the equal read/write timing assumed in this question, reading takes the same 0.625 ns.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2025/q08.png"
+  },
+  {
+    "id": "2025-09",
+    "year": 2025,
+    "number": 9,
+    "source": "past-paper",
+    "topic": "computer-systems",
+    "prompt": "Which of the following is true regarding EEPROM?",
+    "options": [
+      "It can store user data similar to the random access memory.",
+      "Both of its writing and reading speeds are same.",
+      "Information written on it can be erased.",
+      "It requires electric power to retain information.",
+      "The operating system is stored in it."
+    ],
+    "answer": 3,
+    "explanation": "EEPROM is non-volatile memory that can be electrically erased and reprogrammed.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2025/q09.png"
+  },
+  {
+    "id": "2025-10",
+    "year": 2025,
+    "number": 10,
+    "source": "past-paper",
+    "topic": "data-representation",
+    "prompt": "What is the correct hexadecimal equivalent of decimal 33.75₁₀?",
+    "options": [
+      "11.6₁₆",
+      "21.01₁₆",
+      "21.11₁₆",
+      "21.6₁₆",
+      "21.C₁₆"
+    ],
+    "answer": 5,
+    "explanation": "33 = 2×16 + 1, and 0.75×16 = 12 (C), giving 21.C₁₆.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2025/q10.png"
+  },
+  {
+    "id": "2025-11",
+    "year": 2025,
+    "number": 11,
+    "source": "past-paper",
+    "topic": "data-representation",
+    "prompt": "If a document with 1024 characters is converted from EBCDIC to ASCII with parity bit, how much space would be saved?",
+    "options": [
+      "0 bits",
+      "512 bits",
+      "1024 bits",
+      "512 bytes",
+      "1024 bytes"
+    ],
+    "answer": 1,
+    "explanation": "EBCDIC uses 8 bits per character; 7-bit ASCII plus one parity bit also uses 8 bits, so no space is saved.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2025/q11.png"
+  },
+  {
+    "id": "2025-12",
+    "year": 2025,
+    "number": 12,
+    "source": "past-paper",
+    "topic": "data-representation",
+    "prompt": "If the two signed numbers 185₁₀ and 96₁₀ are added using 8-bit registers, what is the value of the result stored in the relevant register?",
+    "options": [
+      "−128₁₀",
+      "25₁₀",
+      "127₁₀",
+      "255₁₀",
+      "281₁₀"
+    ],
+    "answer": 2,
+    "explanation": "The intended stored bit pattern is 25: 185 + 96 = 281, and 281 modulo 256 is 25. The paper says ‘signed’, although positive 185 cannot be represented in an 8-bit two’s-complement register (range −128 to 127). Reading 10111001 as signed gives −71; adding 96 still gives 25. The source wording has been preserved.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2025/q12.png"
+  },
+  {
+    "id": "2025-13",
+    "year": 2025,
+    "number": 13,
+    "source": "past-paper",
+    "topic": "digital-logic",
+    "prompt": "Consider the following flip-flop (see figure). Which of the following statements will be true when i₁ = 0 and i₂ = 1?",
+    "options": [
+      "Q output will remain at 0 and Q̅ output will remain at 1.",
+      "Q output will change to 1 and Q̅ output will change to 0.",
+      "Q output will change to 1 and then to 0.",
+      "Q̅ output will change to 0 and then to 1.",
+      "Q output will remain at 0 while Q̅ output will also change to 0."
+    ],
+    "answer": 2,
+    "explanation": "With i₂ = 1, the lower NOR output becomes 0. The upper NOR then receives two zero inputs and produces Q = 1.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2025/q13.png",
+    "figure": "/questions/2025/q13-figure.png"
+  },
+  {
+    "id": "2025-14",
+    "year": 2025,
+    "number": 14,
+    "source": "past-paper",
+    "topic": "digital-logic",
+    "prompt": "What is the most simple Boolean expression that can be obtained through the given Karnaugh map?\nColumns xy: 00, 01, 11, 10.\nFor z = 0: 1, 0, 0, 1.\nFor z = 1: 1, 0, 1, 1.\n(¬ denotes NOT.)",
+    "options": [
+      "¬y",
+      "y + ¬x ¬z",
+      "¬y + xz",
+      "¬y + xyz",
+      "y¬z + ¬xy"
+    ],
+    "answer": 3,
+    "explanation": "The four cells with y = 0 give ¬y; the remaining 1 is grouped with its neighbour to give xz.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2025/q14.png",
+    "figure": "/questions/2025/q14-figure.png"
+  },
+  {
+    "id": "2025-15",
+    "year": 2025,
+    "number": 15,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Consider the following two statements P and Q:\nP – Data is represented as a sequence of discrete values in a digital signal.\nQ – Even with some corruption, a digital signal is easier to correctly interpret than an analog signal.\nWhich of the following is correct regarding the above two statements?",
+    "options": [
+      "Both statements P and Q are correct and the point presented in statement P gives the reason for the point presented in statement Q.",
+      "Both statements P and Q are correct but the points presented in those two statements are not connected.",
+      "Statement P is correct but statement Q is incorrect.",
+      "Statement P is incorrect but statement Q is correct.",
+      "Both statements P and Q are incorrect."
+    ],
+    "answer": 1,
+    "explanation": "Discrete signal levels can be distinguished and regenerated despite limited noise, explaining the greater tolerance to corruption.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2025/q15.png"
+  },
+  {
+    "id": "2025-16",
+    "year": 2025,
+    "number": 16,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "What does the term attenuation refer to in signal transmission?",
+    "options": [
+      "alteration in the properties of the transmitted signal",
+      "increase in the signal strength",
+      "loss of signal energy as it travels over a distance",
+      "time delay in propagation",
+      "the received signal makes no meaning"
+    ],
+    "answer": 3,
+    "explanation": "Attenuation is the reduction of signal strength or energy as a signal travels through a medium.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2025/q16.png"
+  },
+  {
+    "id": "2025-17",
+    "year": 2025,
+    "number": 17,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "In which of the following is the frequency of the carrier signal varied according to the message signal?",
+    "options": [
+      "in amplitude modulation",
+      "in amplitude shift keying",
+      "in frequency modulation",
+      "in frequency shift keying",
+      "in pulse code modulation"
+    ],
+    "answer": null,
+    "explanation": "Frequency modulation (option 3) is the likely intended answer. Frequency shift keying (option 4) also varies carrier frequency for digital symbols; the question does not specify whether the message is analog or digital. An official key is needed to resolve this wording.",
+    "answerStatus": "needs-review",
+    "page": 3,
+    "sourceImage": "/questions/2025/q17.png"
+  },
+  {
+    "id": "2025-18",
+    "year": 2025,
+    "number": 18,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Which of the following statements are correct regarding the bus topology?\nA – It consists of a main cable with terminators at each end.\nB – Devices in the topology are directly connected to each other.\nC – Problems occur when multiple nodes try to access the medium at the same time.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 3,
+    "explanation": "A bus uses a terminated backbone and may experience collisions; each device connects to the backbone rather than directly to every other device.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2025/q18.png"
+  },
+  {
+    "id": "2025-19",
+    "year": 2025,
+    "number": 19,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Which of the following statements best describes the primary function of a network switch?",
+    "options": [
+      "It amplifies and regenerates signals to travel over long distances.",
+      "It connects devices within a LAN and forwards frames based on the MAC addresses.",
+      "It connects multiple networks together and routes data traffic between them.",
+      "It encrypts data before transmitting them through the network.",
+      "It maps domain names into IP addresses."
+    ],
+    "answer": 2,
+    "explanation": "A typical LAN switch learns MAC addresses and forwards Ethernet frames to the appropriate ports.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2025/q19.png"
+  },
+  {
+    "id": "2025-20",
+    "year": 2025,
+    "number": 20,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Which of the following statements describe the role of the Media Access Control (MAC) protocol?\nA – It ensures orderly access to a shared communication medium.\nB – It finds paths and routes data between network hosts.\nC – It provides unique addresses to identify network interfaces within a LAN.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 3,
+    "explanation": "MAC handles medium access and link-layer MAC addressing. Routing between networks is a network-layer function.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2025/q20.png"
+  },
+  {
+    "id": "2025-21",
+    "year": 2025,
+    "number": 21,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Which of the following ISO/OSI layers is responsible for the establishment and maintenance of an end-to-end reliable connection?",
+    "options": [
+      "Application Layer",
+      "Data link Layer",
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer"
+    ],
+    "answer": 5,
+    "explanation": "The transport layer provides end-to-end transport services, including reliable connections when the chosen protocol supports them.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2025/q21.png"
+  },
+  {
+    "id": "2025-22",
+    "year": 2025,
+    "number": 22,
+    "source": "past-paper",
+    "topic": "information-systems",
+    "prompt": "Which of the following is true about open systems?",
+    "options": [
+      "They operate independently without external software or hardware.",
+      "They limit interoperability to maintain internal control.",
+      "They support interoperability, portability and integration using common standards.",
+      "They improve performance by restricting third-party software and using only proprietary programs.",
+      "They are often incompatible with applications from other platforms."
+    ],
+    "answer": 3,
+    "explanation": "Open systems use common standards to enable interoperability, portability and integration.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2025/q22.png"
+  },
+  {
+    "id": "2025-23",
+    "year": 2025,
+    "number": 23,
+    "source": "past-paper",
+    "topic": "information-systems",
+    "prompt": "Match the Systems labelled from A1 to A3 to the corresponding Descriptions labelled from B1 to B3.\nA1 – Decision Support System\nA2 – Knowledge Management System\nA3 – Enterprise Resource Planning System\nB1 – A system that stores and distributes organizational information such as best practices and expertise to employees\nB2 – A system that helps managers analyze complex data to identify patterns and make business predictions\nB3 – A system that integrates various business processes like accounting, procurement and supply chain operations",
+    "options": [
+      "A1 – B1, A2 – B2, A3 – B3",
+      "A1 – B1, A2 – B3, A3 – B2",
+      "A1 – B2, A2 – B1, A3 – B3",
+      "A1 – B2, A2 – B3, A3 – B1",
+      "A1 – B3, A2 – B2, A3 – B1"
+    ],
+    "answer": 3,
+    "explanation": "DSS supports analysis and decisions; KMS shares organizational knowledge; ERP integrates core business processes.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2025/q23.png"
+  },
+  {
+    "id": "2025-24",
+    "year": 2025,
+    "number": 24,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Which of the following system development lifecycle models facilitate iterative development and accommodate changing requirements?\nA – Spiral model\nB – Agile model\nC – Prototyping",
+    "options": [
+      "A only",
+      "B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 5,
+    "explanation": "Spiral, agile and prototyping all support repeated refinement and can accommodate evolving requirements.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2025/q24.png"
+  },
+  {
+    "id": "2025-25",
+    "year": 2025,
+    "number": 25,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Column A lists the phases of the waterfall model with labels A1 to A5 and column B lists some descriptions with labels B1 to B5:\nA1 – Requirements analysis\nA2 – System design\nA3 – Implementation\nA4 – Testing\nA5 – Maintenance\nB1 – Updating the software after deployment\nB2 – Writing codes based on detailed system specifications\nB3 – Validating whether the system meets user needs and functions correctly\nB4 – Identifying what the system should do through discussions with stakeholders\nB5 – Creating detailed technical architecture and data flow diagrams\nWhat is the correctly matched phase-description pair?",
+    "options": [
+      "A1 – B5",
+      "A2 – B4",
+      "A3 – B2",
+      "A4 – B1",
+      "A5 – B3"
+    ],
+    "answer": 3,
+    "explanation": "Implementation is the phase in which program code is written from the system specifications.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2025/q25.png"
+  },
+  {
+    "id": "2025-26",
+    "year": 2025,
+    "number": 26,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Assume that a project is to be done to computerise the administration of all government schools. The system developers in the project have been advised to use the Structured System Analysis and Design Methodology (SSADM) for it.\nWhat is a key benefit of using SSADM in this project?",
+    "options": [
+      "It allows faster development with minimal documentation.",
+      "It avoids documentation effort completely.",
+      "It eliminates the need for system analysis.",
+      "It encourages rapid software deployment.",
+      "It ensures standardization and consistency of the entire project."
+    ],
+    "answer": 5,
+    "explanation": "SSADM provides a structured, documented approach that promotes consistency and standardization across a large project.",
+    "answerStatus": "worked",
+    "page": 5,
+    "sourceImage": "/questions/2025/q26.png"
+  },
+  {
+    "id": "2025-27",
+    "year": 2025,
+    "number": 27,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Which of the following statements about system testing are correct?\nA – It verifies that the complete and integrated system meets the specified requirements.\nB – It is normally performed by end-users to validate software functionality.\nC – It is performed before unit testing in the standard software testing life cycle.",
+    "options": [
+      "A only",
+      "B only",
+      "A and B only",
+      "A and C only",
+      "B and C only"
+    ],
+    "answer": 1,
+    "explanation": "System testing evaluates the integrated system against requirements. End-user validation is acceptance testing, and unit testing normally comes first.",
+    "answerStatus": "worked",
+    "page": 5,
+    "sourceImage": "/questions/2025/q27.png"
+  },
+  {
+    "id": "2025-28",
+    "year": 2025,
+    "number": 28,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "A software tester reviews a code part that calculates a discount based on a person’s age and purchase history by manually tracing each if-then-else condition branch.\nWhat testing is this?",
+    "options": [
+      "Acceptance testing",
+      "Black-box testing",
+      "Integration testing",
+      "System testing",
+      "White-box testing"
+    ],
+    "answer": 5,
+    "explanation": "Tracing internal code branches requires knowledge of the implementation, making it white-box testing.",
+    "answerStatus": "worked",
+    "page": 5,
+    "sourceImage": "/questions/2025/q28.png"
+  },
+  {
+    "id": "2025-29",
+    "year": 2025,
+    "number": 29,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "A university replaced its old Learning Management System (LMS) with a new one. However, the new LMS was initially made available only for the first year students. After this successful trial, it was made available for the other students too by stopping using the old LMS completely and starting the new LMS on a specific date.\nWhat type of deployment method is used in this changeover?",
+    "options": [
+      "Direct only",
+      "Phased only",
+      "Pilot and direct only",
+      "Pilot and parallel only",
+      "Pilot and phased only"
+    ],
+    "answer": 3,
+    "explanation": "The first-year trial is a pilot. Switching everyone else on a fixed date while stopping the old system is direct changeover.",
+    "answerStatus": "worked",
+    "page": 5,
+    "sourceImage": "/questions/2025/q29.png"
+  },
+  {
+    "id": "2025-30",
+    "year": 2025,
+    "number": 30,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Assume that a vehicle maintenance information system is to be developed. When a vehicle’s registration number is input to the system, the system should output the maintenance work records of the vehicle to the user. (e.g., On Aug 19ᵗʰ 2025, the oil of this vehicle was changed.) A service station manager, should also be able to add new work records to the system whenever such work is done to the vehicle.\nShown below is the first-level DFD of the system (see figure).\nWhich of the following gives the correct replacements for P to U in the diagram?",
+    "options": [
+      "P – New work record; Q – Display work records; R – Service station managers; S – Work history; T – Registration number; U – Add work record",
+      "P – New work record; Q – Add work record; R – Registration numbers; S – Work records; T – Registration number; U – Display work records",
+      "P – Registration number; Q – Add work record; R – Service station managers; S – Work records; T – New work record; U – Display work records",
+      "P – Registration number; Q – Display work records; R – Work history; S – Work records; T – New work record; U – Add work record",
+      "P – Work history; Q – Display work records; R – Registration numbers; S – Work records; T – New work record; U – Add work record"
+    ],
+    "answer": 4,
+    "explanation": "The registration number identifies the vehicle; one process displays stored work records and the other adds new records to the work-history store.",
+    "answerStatus": "worked",
+    "page": 5,
+    "sourceImage": "/questions/2025/q30.png",
+    "figure": "/questions/2025/q30-figure.png"
+  },
+  {
+    "id": "2025-31",
+    "year": 2025,
+    "number": 31,
+    "source": "past-paper",
+    "topic": "databases",
+    "prompt": "Consider the following relations from a database at a University. The database is used to keep data about the marks of students taking different courses, the teachers who teach the courses and the department that each teacher is working at:\nRESULT(Student_id, Course_id, Mark)\nSTUDENT(Student_id, Student_name, Student_phone)\nCOURSE(Course_id, Course_name, Teacher_id)\nTEACHER(Teacher_id, Teacher_name, Teacher_phone, Dept_id)\nDEPARTMENT(Dept_id, Dept_name, Dept_phone)\nPrimary keys (underlined in the source): RESULT(Student_id, Course_id), STUDENT(Student_id), COURSE(Course_id), TEACHER(Teacher_id), DEPARTMENT(Dept_id).\nWhich of the following is not a foreign key in this schema?",
+    "options": [
+      "Student_id in the RESULT relation",
+      "Course_id in the RESULT relation",
+      "Student_id in the STUDENT relation",
+      "Teacher_id in the COURSE relation",
+      "Dept_id in the TEACHER relation"
+    ],
+    "answer": 3,
+    "explanation": "Student_id is the primary key of STUDENT; the other listed attributes reference primary keys in other relations.",
+    "answerStatus": "worked",
+    "page": 6,
+    "sourceImage": "/questions/2025/q31.png"
+  },
+  {
+    "id": "2025-32",
+    "year": 2025,
+    "number": 32,
+    "source": "past-paper",
+    "topic": "databases",
+    "prompt": "Consider the following schema of a table that is designed to store data about students (see figure).\nWhich of the following statements are true?\nA – Student_name cannot be empty when inserting a record.\nB – The same email address (Email) could be entered for two students.\nC – Inserting a student without specifying the Student_id will result in an error message.",
+    "options": [
+      "A only",
+      "B only",
+      "C only",
+      "A and B only",
+      "All A, B and C"
+    ],
+    "answer": 4,
+    "explanation": "The intended interpretation is A and B: Student_name is NOT NULL, Email has no UNIQUE constraint, and Student_id is generated by AUTO_INCREMENT. Strictly, NOT NULL prohibits NULL rather than an empty string, so statement A uses “empty” loosely.",
+    "answerStatus": "worked",
+    "page": 6,
+    "sourceImage": "/questions/2025/q32.png",
+    "figure": "/questions/2025/q32-figure.png"
+  },
+  {
+    "id": "2025-33",
+    "year": 2025,
+    "number": 33,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "Which of these is an advantage of using a compiled language compared to an interpreted language for implementing a program?",
+    "options": [
+      "less development time",
+      "easier debugging",
+      "faster execution of the developed program",
+      "portability of the developed program",
+      "error detection at program run time"
+    ],
+    "answer": 3,
+    "explanation": "Ahead-of-time compilation normally avoids translating each instruction during execution, improving runtime speed in the comparison assumed here.",
+    "answerStatus": "worked",
+    "page": 6,
+    "sourceImage": "/questions/2025/q33.png"
+  },
+  {
+    "id": "2025-34",
+    "year": 2025,
+    "number": 34,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "Which of the following statements are correct?\nA – Assembler is a translator for the Assembly language.\nB – Compilers detect only logical errors when compiling a program.\nC – Program compilation is a major task of the operating system.\nD – An interpreter converts a program completely to an executable file.",
+    "options": [
+      "A only",
+      "B only",
+      "A and C only",
+      "B and D only",
+      "C and D only"
+    ],
+    "answer": 1,
+    "explanation": "An assembler translates assembly language. Compilers primarily detect syntax and related compile-time errors; compilation is a translator task, and interpretation does not normally create a complete standalone executable.",
+    "answerStatus": "worked",
+    "page": 6,
+    "sourceImage": "/questions/2025/q34.png"
+  },
+  {
+    "id": "2025-35",
+    "year": 2025,
+    "number": 35,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "Consider the following A, B, C and D variable initializations in Python:\nA = 1.2\nB = \"True\"\nC = (1,2,3)\nD = True\nWhich of the following gives the correct data types of A, B, C and D respectively?",
+    "options": [
+      "float, bool, list, bool",
+      "float, bool, str, str",
+      "float, bool, tuple, bool",
+      "float, str, dict, bool",
+      "float, str, tuple, bool"
+    ],
+    "answer": 5,
+    "explanation": "1.2 is a float, quoted \"True\" is a string, (1,2,3) is a tuple, and unquoted True is a Boolean.",
+    "answerStatus": "worked",
+    "page": 6,
+    "sourceImage": "/questions/2025/q35.png"
+  },
+  {
+    "id": "2025-36",
+    "year": 2025,
+    "number": 36,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "What is the execution output of the following Python expression?\n(1,2,3)[-1] + 3 * 4",
+    "options": [
+      "13",
+      "15",
+      "16",
+      "24",
+      "TypeError"
+    ],
+    "answer": 2,
+    "explanation": "Index −1 selects 3; multiplication gives 12, and 3 + 12 = 15.",
+    "answerStatus": "worked",
+    "page": 7,
+    "sourceImage": "/questions/2025/q36.png"
+  },
+  {
+    "id": "2025-37",
+    "year": 2025,
+    "number": 37,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "What is the execution output of the following Python code? (The original code and indentation are shown in the figure.)\nx = \"01101\"\nt = 0\np = 0\nfor i in x:\n    if(int(i)):\n        t = t + 2 ** p\n    p = p + 1\nprint(t)",
+    "options": [
+      "4",
+      "16",
+      "20",
+      "22",
+      "24"
+    ],
+    "answer": 4,
+    "explanation": "The characters equal to 1 occur at positions p = 1, 2 and 4, so t becomes 2 + 4 + 16 = 22.",
+    "answerStatus": "worked",
+    "page": 7,
+    "sourceImage": "/questions/2025/q37.png",
+    "figure": "/questions/2025/q37-figure.png"
+  },
+  {
+    "id": "2025-38",
+    "year": 2025,
+    "number": 38,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "Following labelled Python code has been written to display all records from the ‘Book’ table of the ‘Books_database’ (see figure).\nWhich of the following gives correct replacements for labels A, B and C?",
+    "options": [
+      "A – mydb.cursor(); B – \"SELECT * FROM Book\"; C – mysqli",
+      "A – mysql.connector.connect; B – mydb.cursor(); C – \"SELECT * FROM Book\"",
+      "A – mysql.connector.connect; B – open(‘mydb’, ‘r’); C – \"SELECT * FROM Book\"",
+      "A – mysqli; B – open(‘mydb’, ‘r’); C – mysql.connector.connect",
+      "A – mysqli; B – mysql.connector.connect; C – open(‘mydb’, ‘r’)"
+    ],
+    "answer": 2,
+    "explanation": "mysql.connector.connect creates the connection, mydb.cursor() creates a cursor, and SELECT * FROM Book retrieves every record.",
+    "answerStatus": "worked",
+    "page": 7,
+    "sourceImage": "/questions/2025/q38.png",
+    "figure": "/questions/2025/q38-figure.png"
+  },
+  {
+    "id": "2025-39",
+    "year": 2025,
+    "number": 39,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Assume that you have to design the following systems. For which of them will you require the users to login to the system with usernames and passwords in order for them to use those systems?\nA – A learning management system for students to download learning resources and upload assignments\nB – An online banking system to let users transfer funds to other users\nC – A system to let the public know about the services of a Government department and its opening hours",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 2,
+    "explanation": "The LMS and banking system require user identity and access control; public service information can be read without signing in.",
+    "answerStatus": "worked",
+    "page": 7,
+    "sourceImage": "/questions/2025/q39.png"
+  },
+  {
+    "id": "2025-40",
+    "year": 2025,
+    "number": 40,
+    "source": "past-paper",
+    "topic": "web-development",
+    "prompt": "Nithya saves the following HTML code as beach.html on her desktop computer (see figure).\nNote:\n1. Assume that she has beach_large.jpeg, beach_medium.jpeg and beach_small.jpeg files also in the same folder of her computer.\n2. The picture element can be used to specify different images to be displayed for different devices or screen sizes.\n3. The media attribute specifies what media or device the linked resource is suitable for and the srcset attribute specifies the URL of the image to be used.\nWhich of the following statements are true?\nA – This file is using an external style sheet.\nB – When Nithya opens this file through the largest browser window of her computer, the beach_small.jpeg image is displayed.\nC – When Nithya emails only the beach.html file to Kamala and when Kamala opens it through her smart phone, the ‘Small beach picture’ text is displayed.",
+    "options": [
+      "A only",
+      "B only",
+      "C only",
+      "A and C only",
+      "B and C only"
+    ],
+    "answer": 3,
+    "explanation": "There is no stylesheet link. The picture element selects a larger image for wider screens. Sending only the HTML omits the image files, so the fallback img alternative text is displayed.",
+    "answerStatus": "worked",
+    "page": 8,
+    "sourceImage": "/questions/2025/q40.png",
+    "figure": "/questions/2025/q40-figure.png"
+  },
+  {
+    "id": "2025-41",
+    "year": 2025,
+    "number": 41,
+    "source": "past-paper",
+    "topic": "web-development",
+    "prompt": "A web page is shown in Figure 41.1 and part of the HTML source that was used to make it is shown in Figure 41.2, with five tags labelled from A to E (see figure).\nWhich of the following gives the correct replacements for A to E?",
+    "options": [
+      "A – h1, B – p, C – img, D – em, E – href",
+      "A – h1, B – p, C – img, D – em, E – video",
+      "A – h1, B – p, C – href, D – b, E – video",
+      "A – style, B – em, C – img, D – p, E – href",
+      "A – style, B – p, C – body, D – em, E – video"
+    ],
+    "answer": 1,
+    "explanation": "h1 produces the heading, p marks a paragraph, img embeds the picture, em adds emphasis, and href supplies a hyperlink target.",
+    "answerStatus": "worked",
+    "page": 8,
+    "sourceImage": "/questions/2025/q41.png",
+    "figure": "/questions/2025/q41-figure.png"
+  },
+  {
+    "id": "2025-42",
+    "year": 2025,
+    "number": 42,
+    "source": "past-paper",
+    "topic": "web-development",
+    "prompt": "Which of the following is the correct way to include the ‘shop.css’ external CSS file to an HTML file?",
+    "options": [
+      "<a href=\"shop.css\">shop.css</a>",
+      "<css src=\"shop.css\">",
+      "<style src=\"shop.css\">",
+      "<stylesheet>shop.css</stylesheet>",
+      "<link rel=\"stylesheet\" href=\"shop.css\">"
+    ],
+    "answer": 5,
+    "explanation": "An external stylesheet is referenced with a link element whose rel is stylesheet and whose href points to the CSS file.",
+    "answerStatus": "worked",
+    "page": 9,
+    "sourceImage": "/questions/2025/q42.png"
+  },
+  {
+    "id": "2025-43",
+    "year": 2025,
+    "number": 43,
+    "source": "past-paper",
+    "topic": "web-development",
+    "prompt": "Which of the following technologies is most convenient to make the colour of all the second level (h2) headings of a website to blue?",
+    "options": [
+      "Apache",
+      "CSS",
+      "HTML",
+      "MySQL",
+      "PHP"
+    ],
+    "answer": 2,
+    "explanation": "CSS can apply a shared rule such as h2 { color: blue; } to every second-level heading.",
+    "answerStatus": "worked",
+    "page": 9,
+    "sourceImage": "/questions/2025/q43.png"
+  },
+  {
+    "id": "2025-44",
+    "year": 2025,
+    "number": 44,
+    "source": "past-paper",
+    "topic": "emerging-technologies",
+    "prompt": "Which of the following statements are true?\nA – Even when analog inputs are given to the digital pins of an Arduino board, they are read as analog values.\nB – The USB port of an Arduino board can also be used to supply DC (direct current) electric power to it.\nC – To input the room temperature to an Arduino board, Vout pin of the LM35 temperature sensor could be used.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 4,
+    "explanation": "Ordinary digital reads detect logic levels rather than analog magnitudes. USB can power the board, and the LM35 output voltage represents temperature.",
+    "answerStatus": "worked",
+    "page": 9,
+    "sourceImage": "/questions/2025/q44.png"
+  },
+  {
+    "id": "2025-45",
+    "year": 2025,
+    "number": 45,
+    "source": "past-paper",
+    "topic": "emerging-technologies",
+    "prompt": "Consider the following code with labels P–S to answer questions 45 and 46. The code has been designed for an Arduino board to switch on/off a motor based on room temperature (see figure).\nWhich of the following contains the correct replacements for the labels?",
+    "options": [
+      "P – INPUT; Q – analogRead; R – digitalWrite; S – motorPin",
+      "P – INPUT; Q – digitalWrite; R – analogRead; S – motorPin",
+      "P – OUTPUT; Q – analogRead; R – digitalWrite; S – motorPin",
+      "P – OUTPUT; Q – analogRead; R – digitalWrite; S – sensorPin",
+      "P – OUTPUT; Q – digitalWrite; R – analogRead; S – sensorPin"
+    ],
+    "answer": 3,
+    "explanation": "The motor pin is an OUTPUT; analogRead samples the sensor; digitalWrite changes motorPin between HIGH and LOW.",
+    "answerStatus": "worked",
+    "page": 9,
+    "sourceImage": "/questions/2025/q45.png",
+    "figure": "/questions/2025/q45-figure.png"
+  },
+  {
+    "id": "2025-46",
+    "year": 2025,
+    "number": 46,
+    "source": "past-paper",
+    "topic": "emerging-technologies",
+    "prompt": "Using the Arduino motor-control code shared with question 45 (see figure), which of the following statements are true?\nA – The input from the temperature sensor could have been connected to any of the pins A1–A5 as well but then the ‘const int sensorPin = A0;’ line in the code should be changed to reflect that change.\nB – The motor should be connected to a GND pin of the Arduino board.\nC – The above code when correctly completed can be compiled and uploaded through the USB port to the Arduino microcontroller by using the ‘Upload’ button in the Arduino IDE.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": null,
+    "explanation": "A and C are true. B is ambiguous: the motor’s control connection must use the configured output through an appropriate driver, but a motor circuit also normally needs a ground return. Option 3 follows a control-pin interpretation; option 5 is defensible if B refers to the ground connection. A teacher or official marking key is needed to resolve the intended interpretation, so this question is excluded from scoring.",
+    "answerStatus": "needs-review",
+    "page": 10,
+    "sourceImage": "/questions/2025/q46.png",
+    "figure": "/questions/2025/q46-figure.png"
+  },
+  {
+    "id": "2025-47",
+    "year": 2025,
+    "number": 47,
+    "source": "past-paper",
+    "topic": "emerging-technologies",
+    "prompt": "Which of the following statements are true?\nA – IPv6 is highly suitable for scalability and efficient operation of Internet of Things (IOT).\nB – Once added to the Arduino board, an Ethernet Shield facilitates the board to connect to the Internet.\nC – Static IP addresses cannot be used for IOT devices.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 2,
+    "explanation": "IPv6 offers a large address space and an Ethernet Shield adds network connectivity. IoT devices can use static IP addresses.",
+    "answerStatus": "worked",
+    "page": 10,
+    "sourceImage": "/questions/2025/q47.png"
+  },
+  {
+    "id": "2025-48",
+    "year": 2025,
+    "number": 48,
+    "source": "past-paper",
+    "topic": "emerging-technologies",
+    "prompt": "What is the suitable replacement for the blank in the following statement?\nBy analyzing historical data of a person’s previous hotel visits and his/her …………… submitted to social media of the same, an AI-based hotel recommendation system should be successfully able to suggest hotels that the person would like.",
+    "options": [
+      "email addresses",
+      "payment records",
+      "phone numbers",
+      "reviews",
+      "street addresses"
+    ],
+    "answer": 4,
+    "explanation": "Reviews reveal a person’s preferences and satisfaction with previous hotel visits, helping personalize recommendations.",
+    "answerStatus": "worked",
+    "page": 10,
+    "sourceImage": "/questions/2025/q48.png"
+  },
+  {
+    "id": "2025-49",
+    "year": 2025,
+    "number": 49,
+    "source": "past-paper",
+    "topic": "emerging-technologies",
+    "prompt": "Which of the following statements are true with respect to Artificial Intelligence (AI)?\nA – AI applications are also computer programs.\nB – All AI applications are automatically generated.\nC – When AI technology is used to generate new content, it is suitable to disclose that the content was generated by AI.",
+    "options": [
+      "B only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 3,
+    "explanation": "AI applications are software, but they are not all automatically generated. Disclosing AI-generated content supports transparency.",
+    "answerStatus": "worked",
+    "page": 10,
+    "sourceImage": "/questions/2025/q49.png"
+  },
+  {
+    "id": "2025-50",
+    "year": 2025,
+    "number": 50,
+    "source": "past-paper",
+    "topic": "emerging-technologies",
+    "prompt": "Which of the following problems are suitable to be solved using nature inspired computing technologies?\nA – make the monthly payroll list of the employees of a large multinational organization\nB – the use of autonomous robots to move goods in a warehouse avoiding collisions\nC – scheduling hospital operating theatre time slots for the patients in the surgery waiting list",
+    "options": [
+      "A only",
+      "B only",
+      "C only",
+      "A and C only",
+      "B and C only"
+    ],
+    "answer": 5,
+    "explanation": "Nature-inspired optimization is suited to difficult route-planning and scheduling problems; routine payroll is a conventional deterministic calculation.",
+    "answerStatus": "worked",
+    "page": 10,
+    "sourceImage": "/questions/2025/q50.png"
+  }
+]

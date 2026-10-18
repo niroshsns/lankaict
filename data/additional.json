@@ -1,0 +1,365 @@
+[
+  {
+    "id": "extra-001", "year": null, "number": 1, "source": "additional", "topic": "ict-fundamentals",
+    "prompt": "A shop stores individual sales records. Which of the following is information produced by processing those records?",
+    "options": ["A barcode scanned for one item", "The date typed into a sales record", "A report showing total sales for each month", "An unprocessed list of item codes", "A price entered for one sale"],
+    "answer": 3, "explanation": "The monthly report organizes and summarizes raw sales data into information useful for decisions.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-002", "year": null, "number": 2, "source": "additional", "topic": "ict-fundamentals",
+    "prompt": "An examination mark must be between 0 and 100 inclusive. Which validation check most directly rejects the value 108?",
+    "options": ["Range check", "Presence check", "Length check", "Check digit", "Uniqueness check"],
+    "answer": 1, "explanation": "A range check compares a value with the permitted lower and upper limits.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-003", "year": null, "number": 3, "source": "additional", "topic": "ict-fundamentals",
+    "prompt": "A clerk enters an account number twice. The system compares the two entries and asks for correction if they differ. What is this technique primarily intended to do?",
+    "options": ["Encrypt the account number", "Confirm that the account has enough money", "Compress the account number", "Prove that the account exists", "Verify that the data was entered consistently"],
+    "answer": 5, "explanation": "Double entry is a verification technique that detects inconsistent transcription; matching entries do not prove that the original value is valid.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-004", "year": null, "number": 4, "source": "additional", "topic": "ict-fundamentals",
+    "prompt": "A school wants to adapt software to its needs and redistribute the adapted version legally. Which fact most directly establishes whether it may do so?",
+    "options": ["The installation file is small", "The software licence grants modification and redistribution rights", "The software has a graphical interface", "The software runs without an Internet connection", "The school can download it without paying"],
+    "answer": 2, "explanation": "The licence determines the permitted uses. A free download alone does not establish permission to modify or redistribute software.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-005", "year": null, "number": 5, "source": "additional", "topic": "ict-fundamentals",
+    "prompt": "A bus service sends an accurate cancellation notice after all affected passengers have reached the bus stop. Which information-quality characteristic is most clearly inadequate?",
+    "options": ["Accuracy", "Completeness of the cancellation reason", "Consistency of the bus number", "Timeliness", "Numerical precision"],
+    "answer": 4, "explanation": "Information must arrive early enough to support the decision for which it is needed; a late notice lacks timeliness.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-006", "year": null, "number": 6, "source": "additional", "topic": "computer-systems",
+    "prompt": "A memory is byte-addressable and its address bus has 12 lines. What is the maximum directly addressable memory capacity?",
+    "options": ["2048 bytes", "4096 bytes", "8192 bytes", "12 bytes", "4096 bits"],
+    "answer": 2, "explanation": "Twelve address bits identify 2¹² = 4096 locations. Each location stores one byte.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-007", "year": null, "number": 7, "source": "additional", "topic": "computer-systems",
+    "prompt": "A processor repeatedly reads the same small group of memory locations. Why can a cache improve the program's execution time?",
+    "options": ["It makes the hard disk non-volatile", "It removes the need for instruction decoding", "It increases the number of address-bus lines", "It can satisfy repeated accesses from faster nearby memory", "It converts every instruction into a single clock cycle"],
+    "answer": 4, "explanation": "Temporal locality means recently used data is likely to be used again; a cache can serve those accesses with lower latency.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-008", "year": null, "number": 8, "source": "additional", "topic": "computer-systems",
+    "prompt": "During an instruction fetch, the CPU must identify the memory location of the next instruction. Which register normally supplies that address?",
+    "options": ["Program counter", "Accumulator", "Instruction register holding the current instruction", "Status register", "Memory data register holding a data value"],
+    "answer": 1, "explanation": "The program counter holds the address of the next instruction to fetch; that address is used to initiate the memory read.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-009", "year": null, "number": 9, "source": "additional", "topic": "computer-systems",
+    "prompt": "A CPU runs at 2 GHz and a program averages 4 clock cycles per completed instruction. Ignoring other delays, approximately how many instructions can it complete per second?",
+    "options": ["8 billion", "2 billion", "500 million", "250 million", "8 million"],
+    "answer": 3, "explanation": "2 × 10⁹ cycles per second divided by 4 cycles per instruction gives 5 × 10⁸ instructions per second.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-010", "year": null, "number": 10, "source": "additional", "topic": "computer-systems",
+    "prompt": "A library scans a printed paragraph and needs an editable text version. Which processing technique is required after capturing the page image?",
+    "options": ["Disk defragmentation", "Barcode decoding", "Audio sampling", "Raster image compression alone", "Optical character recognition"],
+    "answer": 5, "explanation": "Optical character recognition identifies printed characters in an image and converts them into machine-readable text.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-011", "year": null, "number": 11, "source": "additional", "topic": "data-representation",
+    "prompt": "What is the decimal equivalent of hexadecimal 2D₁₆?",
+    "options": ["29", "32", "43", "45", "213"],
+    "answer": 4, "explanation": "D represents 13, so 2D₁₆ = 2 × 16 + 13 = 45.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-012", "year": null, "number": 12, "source": "additional", "topic": "data-representation",
+    "prompt": "The bit pattern 11010110 is interpreted as an 8-bit two's complement integer. What decimal value does it represent?",
+    "options": ["−42", "−41", "−86", "86", "214"],
+    "answer": 1, "explanation": "The unsigned value is 214. With the sign bit set, the two's complement value is 214 − 256 = −42.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-013", "year": null, "number": 13, "source": "additional", "topic": "data-representation",
+    "prompt": "An 8-bit unsigned register stores only the lowest eight bits of an addition result. What value remains after adding decimal 230 and 45?",
+    "options": ["−19", "−1", "255", "275", "19"],
+    "answer": 5, "explanation": "230 + 45 = 275. Keeping eight bits gives 275 modulo 256 = 19; the carry beyond bit 7 is discarded.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-014", "year": null, "number": 14, "source": "additional", "topic": "data-representation",
+    "prompt": "A fixed-length binary code must represent 32 different symbols. What is the minimum number of bits required for each symbol?",
+    "options": ["4", "5", "6", "8", "32"],
+    "answer": 2, "explanation": "n bits provide 2ⁿ different codes. Five bits provide exactly 32 codes.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-015", "year": null, "number": 15, "source": "additional", "topic": "data-representation",
+    "prompt": "Uncompressed mono audio is sampled 8000 times per second with 16 bits per sample. How many bytes are needed for 2 seconds of audio, excluding headers?",
+    "options": ["16000", "256000", "32000", "128000", "64000"],
+    "answer": 3, "explanation": "8000 × 2 × 16 = 256000 bits. Dividing by 8 gives 32000 bytes.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-016", "year": null, "number": 16, "source": "additional", "topic": "digital-logic",
+    "prompt": "A two-input gate produces Y = NOT(A OR B). For which input pair is Y equal to 1?",
+    "options": ["A = 1, B = 0", "A = 0, B = 1", "A = 1, B = 1", "All four input pairs", "A = 0, B = 0"],
+    "answer": 5, "explanation": "This is a NOR gate. OR is 0 only when both inputs are 0, so its negation is then 1.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-017", "year": null, "number": 17, "source": "additional", "topic": "digital-logic",
+    "prompt": "Which Boolean expression is 1 exactly when inputs A and B have different values? Here ¬ means NOT, adjacent symbols mean AND, and + means OR.",
+    "options": ["AB", "A + B", "A¬B + ¬AB", "¬A¬B + AB", "¬(A + B)"],
+    "answer": 3, "explanation": "A¬B + ¬AB covers the input pairs (1,0) and (0,1), which is the XOR function.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-018", "year": null, "number": 18, "source": "additional", "topic": "digital-logic",
+    "prompt": "Which is the simplest equivalent of A + AB in Boolean algebra? Here + means OR and adjacent symbols mean AND.",
+    "options": ["B", "A", "AB", "A + B", "0"],
+    "answer": 2, "explanation": "By the absorption law, A + AB = A. When A is 1 the result is 1, and when A is 0 both terms are 0.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-019", "year": null, "number": 19, "source": "additional", "topic": "digital-logic",
+    "prompt": "A full adder receives A = 1, B = 1 and carry-in = 1. What are its sum bit and carry-out bit, respectively?",
+    "options": ["0, 0", "0, 1", "1, 0", "1, 1", "1, 2"],
+    "answer": 4, "explanation": "1 + 1 + 1 = 3 = 11₂. The low bit is the sum 1 and the high bit is the carry 1.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-020", "year": null, "number": 20, "source": "additional", "topic": "digital-logic",
+    "prompt": "How many rows are required in a complete truth table for a combinational circuit with three independent binary inputs?",
+    "options": ["8", "3", "6", "9", "16"],
+    "answer": 1, "explanation": "Each of the three inputs has two possible values, giving 2³ = 8 distinct input combinations.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-021", "year": null, "number": 21, "source": "additional", "topic": "operating-systems",
+    "prompt": "In the standard process-state model, a blocked process finishes waiting for its disk read. The CPU is still executing another process. To which state does the blocked process normally move?",
+    "options": ["New", "Terminated", "Ready", "Running immediately", "It must remain blocked until the CPU is idle"],
+    "answer": 3, "explanation": "Completing the I/O makes the process eligible to run, so it joins the ready state and waits to be scheduled.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-022", "year": null, "number": 22, "source": "additional", "topic": "operating-systems",
+    "prompt": "Processes P1, P2 and P3 all arrive at time 0, in that ready-queue order. Their CPU bursts are 5, 3 and 1 time units. Round-robin scheduling uses a quantum of 2, with no context-switch cost or I/O. At what time does P2 finish?",
+    "options": ["3", "5", "6", "7", "8"],
+    "answer": 5, "explanation": "Execution is P1 0–2, P2 2–4, P3 4–5, P1 5–7, P2 7–8, then P1 8–9. P2 finishes at time 8.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-023", "year": null, "number": 23, "source": "additional", "topic": "operating-systems",
+    "prompt": "A process accesses a valid virtual-memory page that is currently absent from RAM. What does the resulting page fault normally require the operating system to do?",
+    "options": ["Restart the entire computer", "Load the required page into RAM, replacing another page if necessary", "Delete the process's executable file", "Increase the CPU clock speed", "Treat the page address as a physical address without translation"],
+    "answer": 2, "explanation": "A valid page fault causes the OS to bring the missing page into a physical frame and then resume the interrupted instruction.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-024", "year": null, "number": 24, "source": "additional", "topic": "operating-systems",
+    "prompt": "Free memory blocks appear in this order: 100 KB, 500 KB, 200 KB, 300 KB. Using first-fit allocation, which block is selected for a 212 KB request?",
+    "options": ["100 KB", "200 KB", "300 KB", "500 KB", "No block can hold the request"],
+    "answer": 4, "explanation": "First fit selects the first block large enough. The 100 KB block is too small, so the 500 KB block is selected.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-025", "year": null, "number": 25, "source": "additional", "topic": "operating-systems",
+    "prompt": "In a filesystem where / is the root directory, a process has /school/results as its current directory. To which absolute path does ../reports/summary.txt refer?",
+    "options": ["/school/reports/summary.txt", "/reports/summary.txt", "/school/results/reports/summary.txt", "/school/results/summary.txt", "/school/summary.txt"],
+    "answer": 1, "explanation": ".. moves from /school/results to its parent /school; reports/summary.txt is then resolved from that directory.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-026", "year": null, "number": 26, "source": "additional", "topic": "networks",
+    "prompt": "An ordinary IPv4 LAN uses a /27 subnet. Reserving its network and broadcast addresses, how many addresses are available for hosts?",
+    "options": ["27", "32", "62", "30", "254"],
+    "answer": 4, "explanation": "A /27 leaves 5 host bits: 2⁵ = 32 addresses. Subtracting network and broadcast addresses leaves 30.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-027", "year": null, "number": 27, "source": "additional", "topic": "networks",
+    "prompt": "What is the network address of host 192.168.10.77 with prefix length /26?",
+    "options": ["192.168.10.0", "192.168.10.64", "192.168.10.76", "192.168.10.77", "192.168.10.128"],
+    "answer": 2, "explanation": "A /26 has blocks of 64 addresses. Host 77 belongs to the 64–127 block, whose network address ends in 64.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-028", "year": null, "number": 28, "source": "additional", "topic": "networks",
+    "prompt": "An application needs an ordered, reliable byte stream between two hosts. Which transport-layer protocol directly provides this service?",
+    "options": ["IP", "ARP", "Ethernet", "UDP", "TCP"],
+    "answer": 5, "explanation": "TCP provides ordered byte-stream delivery with acknowledgements and retransmission. UDP does not provide those guarantees by itself.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-029", "year": null, "number": 29, "source": "additional", "topic": "networks",
+    "prompt": "A learning Ethernet switch receives a unicast frame whose destination MAC address is absent from its forwarding table. In the usual basic switching model, what does it do?",
+    "options": ["Flood the frame to other eligible ports in the same VLAN, excluding its incoming port", "Send the frame only back through its incoming port", "Convert the destination MAC address into an IP address", "Discard every frame until the switch restarts", "Send the frame only to the port with the smallest number"],
+    "answer": 1, "explanation": "An unknown unicast destination is flooded within the VLAN so the destination can receive it. The switch learns source MAC addresses from arriving frames.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-030", "year": null, "number": 30, "source": "additional", "topic": "networks",
+    "prompt": "A 12 MB file is transferred at a constant 8 Mbit/s. Use decimal units: 1 MB = 1,000,000 bytes and 1 Mbit = 1,000,000 bits. Ignoring overhead, how long does the transfer take?",
+    "options": ["1.5 seconds", "8 seconds", "12 seconds", "24 seconds", "96 seconds"],
+    "answer": 3, "explanation": "12 MB contains 96 Mbits. At 8 Mbit/s, the transfer takes 96 ÷ 8 = 12 seconds.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-031", "year": null, "number": 31, "source": "additional", "topic": "systems-analysis",
+    "prompt": "Which requirement specifies a measurable non-functional property of a student portal?",
+    "options": ["At least 95% of timetable requests must receive a response within 2 seconds under the stated test load", "A student can download a timetable", "An administrator can create a course", "A lecturer can enter a mark", "A student can change a telephone number"],
+    "answer": 1, "explanation": "The response-time target specifies performance quality. The other requirements describe functions the portal performs.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-032", "year": null, "number": 32, "source": "additional", "topic": "systems-analysis",
+    "prompt": "Which data-flow connection violates standard Data Flow Diagram rules because it bypasses a process?",
+    "options": ["External entity → Process", "Process → Data store", "Data store → Process", "Data store → Data store", "Process → External entity"],
+    "answer": 4, "explanation": "A process must mediate data movement between two data stores. Stores do not directly transform or transfer data to one another in a DFD.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-033", "year": null, "number": 33, "source": "additional", "topic": "systems-analysis",
+    "prompt": "A tester checks a fee calculator by supplying inputs and comparing outputs with the specification, without reading its source code. Which testing approach is being used?",
+    "options": ["White-box testing", "Black-box testing", "Code inspection", "Statement-coverage analysis", "Branch-coverage analysis"],
+    "answer": 2, "explanation": "Black-box testing checks externally observable behavior against requirements without depending on the implementation's internal structure.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-034", "year": null, "number": 34, "source": "additional", "topic": "systems-analysis",
+    "prompt": "A chain introduces a complete new stock system at one selected branch to evaluate it before introducing it at the remaining branches. Which deployment strategy does this describe?",
+    "options": ["Direct changeover at every branch", "Parallel running of both systems at every branch", "Phased installation of individual modules at every branch", "A complete rollback", "Pilot deployment"],
+    "answer": 5, "explanation": "A pilot introduces the system to a limited site or user group before wider deployment.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-035", "year": null, "number": 35, "source": "additional", "topic": "systems-analysis",
+    "prompt": "A feasibility study compares development and maintenance costs with expected savings over five years. Which feasibility aspect is being assessed most directly?",
+    "options": ["Technical feasibility", "Legal feasibility", "Economic feasibility", "Operational feasibility", "Schedule feasibility"],
+    "answer": 3, "explanation": "Economic feasibility assesses whether expected financial benefits justify the system's costs.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-036", "year": null, "number": 36, "source": "additional", "topic": "databases",
+    "prompt": "Which statement correctly describes a primary key in a relational table?",
+    "options": ["It must consist of exactly one numeric column", "It uniquely identifies each row and its key columns cannot contain NULL", "Its values must repeat in at least two rows", "It can contain NULL whenever other columns contain data", "It must always be a foreign key to another table"],
+    "answer": 2, "explanation": "A primary key uniquely identifies rows and is non-null. It can consist of one column or a combination of columns.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-037", "year": null, "number": 37, "source": "additional", "topic": "databases",
+    "prompt": "Sales(Category, Amount) stores one row per sale. Which SQL query returns categories whose total sales amount exceeds 100000?",
+    "options": ["SELECT Category FROM Sales WHERE SUM(Amount) > 100000;", "SELECT Category FROM Sales GROUP BY Amount HAVING Category > 100000;", "SELECT Category FROM Sales WHERE Amount > 100000 GROUP BY Category;", "SELECT Category FROM Sales GROUP BY Category HAVING SUM(Amount) > 100000;", "SELECT Category FROM Sales ORDER BY Category HAVING Amount > 100000;"],
+    "answer": 4, "explanation": "GROUP BY forms one group per category, and HAVING filters those groups using their aggregate SUM(Amount).",
+    "answerStatus": "authored"
+  },
+  {
+    "id": "extra-038", "year": null, "number": 38, "source": "additional", "topic": "databases",
+    "prompt": "OrderLine(OrderId, ProductId, ProductName, Quantity) has composite primary key (OrderId, ProductId). ProductId alone determines ProductName, and all values are atomic. Which normalization problem does this dependency directly demonstrate?",
+    "options": ["A partial dependency that violates second normal form", "A multivalued field that violates first normal form", "An absence of any candidate key", "A requirement that Quantity be the primary key", "A violation caused only by storing numeric values"],
+    "answer": 1, "explanation": "The non-key attribute ProductName depends on only ProductId, a proper subset of the composite key. Such partial dependencies violate 2NF.",
+    "answerStatus": "authored"
+  },
+  {
+    "id": "extra-039", "year": null, "number": 39, "source": "additional", "topic": "databases",
+    "prompt": "Orders.CustomerId is declared as a foreign key referencing Customer.CustomerId. The constraint is checked immediately on insertion, and no customer has ID 27. What happens if an order with CustomerId = 27 is inserted?",
+    "options": ["Customer 27 is automatically created", "The order's customer ID is automatically replaced by zero", "The insertion is rejected for violating referential integrity", "The Customer table is deleted", "The insertion must succeed because foreign keys allow any non-null value"],
+    "answer": 3, "explanation": "An enforced foreign key requires each non-null reference to match an existing referenced key. No CustomerId 27 exists.",
+    "answerStatus": "authored"
+  },
+  {
+    "id": "extra-040", "year": null, "number": 40, "source": "additional", "topic": "databases",
+    "prompt": "A table contains four rows. The Score values are 10, NULL, 0 and NULL. What does SELECT COUNT(*), COUNT(Score) FROM Results; return?",
+    "options": ["2, 4", "4, 4", "2, 2", "4, 1", "4, 2"],
+    "answer": 5, "explanation": "COUNT(*) counts all four rows. COUNT(Score) counts the two non-null values, including zero.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-041", "year": null, "number": 41, "source": "additional", "topic": "programming",
+    "prompt": "What does this Python code print?\na = [2, 4]\nb = a\nb.append(6)\nprint(len(a))",
+    "options": ["0", "1", "2", "3", "6"],
+    "answer": 4, "explanation": "a and b reference the same list. Appending through b also changes the list seen through a, which then has three elements.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-042", "year": null, "number": 42, "source": "additional", "topic": "programming",
+    "prompt": "What does this Python code print?\ntotal = 0\nfor n in range(2, 10, 3):\n    total += n\nprint(total)",
+    "options": ["12", "15", "18", "20", "25"],
+    "answer": 2, "explanation": "range(2, 10, 3) produces 2, 5 and 8; the stop value 10 is excluded. Their sum is 15.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-043", "year": null, "number": 43, "source": "additional", "topic": "programming",
+    "prompt": "In Python, a = 5 and b = 3. What is the value of the expression not (a < 5) and b == 3?",
+    "options": ["True", "False", "5", "3", "A syntax error occurs"],
+    "answer": 1, "explanation": "a < 5 is False, so its negation is True. b == 3 is also True, and True and True evaluates to True.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-044", "year": null, "number": 44, "source": "additional", "topic": "programming",
+    "prompt": "Binary search looks for 45 in [5, 10, 15, 20, 25, 30, 35, 40, 45]. At each step it compares the target with the element at index floor((low + high) / 2), then discards that middle element and the irrelevant half. How many middle-element comparisons occur?",
+    "options": ["2", "3", "4", "5", "9"],
+    "answer": 3, "explanation": "The compared elements are 25, 35, 40 and 45. The fourth comparison finds the target.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-045", "year": null, "number": 45, "source": "additional", "topic": "programming",
+    "prompt": "What does this Python code print?\nn = 20\ncount = 0\nwhile n > 0:\n    n //= 2\n    count += 1\nprint(count)",
+    "options": ["3", "4", "10", "20", "5"],
+    "answer": 5, "explanation": "Successive values of n after division are 10, 5, 2, 1 and 0. Five loop iterations occur.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-046", "year": null, "number": 46, "source": "additional", "topic": "web-development",
+    "prompt": "An HTML form contains <input id=\"student-email\" name=\"email\" type=\"email\">. Which element explicitly associates the visible label 'Email address' with this input?",
+    "options": ["<label name=\"email\">Email address</label>", "<label href=\"student-email\">Email address</label>", "<label for=\"student-email\">Email address</label>", "<label for=\"email\">Email address</label>", "<label src=\"student-email\">Email address</label>"],
+    "answer": 3, "explanation": "The label's for value must match the input's id. The name attribute serves a different role when submitting form data.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-047", "year": null, "number": 47, "source": "additional", "topic": "web-development",
+    "prompt": "A CSS box uses box-sizing: content-box; width: 200px; padding: 10px; border: 2px solid black; margin: 0;. What is its total outer width, including padding and borders?",
+    "options": ["200px", "210px", "212px", "220px", "224px"],
+    "answer": 5, "explanation": "The total width is 200 + 10 + 10 + 2 + 2 = 224 pixels because content-box excludes padding and borders from width.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-048", "year": null, "number": 48, "source": "additional", "topic": "web-development",
+    "prompt": "An element is <p id=\"msg\" class=\"note\">Hello</p>. The same author stylesheet contains p { color: blue; }, p.note { color: green; }, and #msg { color: red; }. There are no other rules or !important declarations. What colour is its text?",
+    "options": ["Red", "Green", "Blue", "Black", "The browser must display all three colours"],
+    "answer": 1, "explanation": "The ID selector #msg has greater specificity than the class-and-element selector p.note or the element selector p.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-049", "year": null, "number": 49, "source": "additional", "topic": "web-development",
+    "prompt": "A form submits a search term using the HTTP GET method. In a normal browser submission, where are its named form values placed?",
+    "options": ["Only in a CSS stylesheet", "Only in the server's source code", "Inside the page's title element", "In the query component of the request URL", "In the image file named by the first img element"],
+    "answer": 4, "explanation": "GET form submission encodes successful named controls into the URL query, such as ?q=database.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-050", "year": null, "number": 50, "source": "additional", "topic": "web-development",
+    "prompt": "A registration form checks required fields with JavaScript in the browser. Why must the server also validate the submitted data?",
+    "options": ["Server validation automatically makes every password strong", "A client can bypass browser checks and send a request directly", "JavaScript prevents every network request from reaching the server", "HTML forms can transmit only valid data", "Server validation replaces all access-control checks"],
+    "answer": 2, "explanation": "Client-side checks improve usability but cannot be trusted as a security boundary; the server must enforce its own input rules.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-051", "year": null, "number": 51, "source": "additional", "topic": "information-systems",
+    "prompt": "A supermarket system records each sale, calculates the bill and updates stock quantities at checkout. Which information-system category best describes this routine operational work?",
+    "options": ["Executive information system", "Expert system for diagnosis", "Decision support system for long-term strategy", "Knowledge management repository", "Transaction processing system"],
+    "answer": 5, "explanation": "A transaction processing system records and processes routine business events such as sales and stock updates.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-052", "year": null, "number": 52, "source": "additional", "topic": "information-systems",
+    "prompt": "A manager changes assumed fuel prices in a model to compare possible delivery plans before choosing one. Which system capability is being illustrated?",
+    "options": ["Capturing a single sale at a checkout", "What-if analysis in a decision support system", "Printing an unchanged employee payslip", "Replacing every management decision automatically", "Storing only an archive of scanned letters"],
+    "answer": 2, "explanation": "What-if analysis explores how assumptions affect possible outcomes, supporting a manager's decision rather than merely recording transactions.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-053", "year": null, "number": 53, "source": "additional", "topic": "information-systems",
+    "prompt": "A company repeatedly enters the same purchase details separately in purchasing, inventory and accounting applications. Which ERP capability most directly reduces this duplication?",
+    "options": ["Giving every department an unrelated item-coding scheme", "Disabling all links between departments", "Requiring the same purchase to be retyped at each stage", "Integrating business modules around shared, consistent data", "Keeping accounting records only on paper"],
+    "answer": 4, "explanation": "ERP integrates related business processes so authorized modules can use common data instead of repeatedly re-entering it.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-054", "year": null, "number": 54, "source": "additional", "topic": "information-systems",
+    "prompt": "A message claims to be from a school's IT office and asks a teacher to enter a password at an unfamiliar link to avoid account deletion. Which response best protects the account?",
+    "options": ["Avoid the link and verify the request through a known official contact or independently opened official site", "Reply with the password to prove account ownership", "Forward the password to other teachers for confirmation", "Enter the password because the message includes the school logo", "Disable all account security before opening the link"],
+    "answer": 1, "explanation": "Logos and urgent claims can be copied in phishing messages. Independent verification through a trusted channel avoids disclosing credentials to an impostor.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-055", "year": null, "number": 55, "source": "additional", "topic": "information-systems",
+    "prompt": "A school website displays an image containing an important evacuation-route map. Which change most directly helps users who cannot see the map?",
+    "options": ["Make the image filename longer", "Remove all surrounding text", "Provide a meaningful text alternative or linked text description of the route", "Use colour alone to distinguish every instruction", "Replace the map with a decorative background image without text"],
+    "answer": 3, "explanation": "A text alternative communicates the map's essential information to users of screen readers and others who cannot access the image visually.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-056", "year": null, "number": 56, "source": "additional", "topic": "emerging-technologies",
+    "prompt": "An IoT greenhouse measures temperature and opens a vent when it becomes too hot. Which component performs the actuator role?",
+    "options": ["The motor that opens the vent", "The temperature sensor", "The stored temperature log", "The network address", "The timestamp in each reading"],
+    "answer": 1, "explanation": "An actuator changes the physical environment. The motor moves the vent, while the temperature sensor measures a condition.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-057", "year": null, "number": 57, "source": "additional", "topic": "emerging-technologies",
+    "prompt": "A model learns to classify email using examples that have already been labelled 'spam' or 'not spam'. Which learning approach does this describe?",
+    "options": ["Unsupervised clustering without labels", "Lossless compression", "Supervised learning", "Disk scheduling", "A sorting algorithm that uses no training examples"],
+    "answer": 3, "explanation": "Supervised learning uses input examples paired with known target labels to learn a mapping for new inputs.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-058", "year": null, "number": 58, "source": "additional", "topic": "emerging-technologies",
+    "prompt": "After training an image classifier, why should its final performance be measured on a separate test set that was not used for training or model selection?",
+    "options": ["To guarantee that the model can never make an error", "To remove the need for correct test labels", "To make the training data identical to the test data", "To ensure that every test image is memorized before evaluation", "To estimate how well the model generalizes to unseen examples"],
+    "answer": 5, "explanation": "A held-out test set provides evidence about performance on new data and helps avoid an overly optimistic result caused by evaluating on familiar examples.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-059", "year": null, "number": 59, "source": "additional", "topic": "emerging-technologies",
+    "prompt": "A school uses an online attendance application through a browser. The provider manages the application and underlying servers; the school manages its users and attendance data. Which cloud service model best fits this arrangement?",
+    "options": ["Infrastructure as a Service, where the school installs and maintains the entire application stack", "Software as a Service", "A local standalone application without a network service", "Bare-metal server ownership by the school", "A peer-to-peer file-transfer protocol"],
+    "answer": 2, "explanation": "SaaS supplies a managed application to customers; the provider maintains the application infrastructure while customers use and configure the service.", "answerStatus": "authored"
+  },
+  {
+    "id": "extra-060", "year": null, "number": 60, "source": "additional", "topic": "emerging-technologies",
+    "prompt": "An IoT controller's analogue-to-digital converter returns a 10-bit unsigned code. What is its largest possible output code in decimal?",
+    "options": ["10", "255", "512", "1023", "1024"],
+    "answer": 4, "explanation": "Ten bits provide 2¹⁰ = 1024 codes. Numbered from zero, they range from 0 through 1023.", "answerStatus": "authored"
+  }
+]

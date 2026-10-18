@@ -1,0 +1,1014 @@
+[
+  {
+    "id": "2023-01",
+    "year": 2023,
+    "number": 1,
+    "source": "past-paper",
+    "topic": "ict-fundamentals",
+    "prompt": "Which of the following statements are correct?\nA - Word processors and spreadsheet software belong to the category of utility software.\nB - A compiler is an example for a program translator.\nC - It is illegal to use a proprietary software without obtaining its license.",
+    "options": [
+      "A only",
+      "B only",
+      "C only",
+      "A and B only",
+      "B and C only"
+    ],
+    "answer": 5,
+    "explanation": "Word processors and spreadsheets are application software. A compiler translates programs, and proprietary software requires an appropriate licence.",
+    "answerStatus": "worked",
+    "page": 1,
+    "sourceImage": "/questions/2023/q01.png"
+  },
+  {
+    "id": "2023-02",
+    "year": 2023,
+    "number": 2,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Personal information of students and their exam marks are input to a Student Information System. Marks for a subject range from 0 to 100. A student has to study a collection of compulsory and optional subjects and sit for the relevant examinations.\nWhich of the following are suitable data validations for the above system?\nA - A presence check for the marks of all subjects taken/not taken by the student\nB - A range check to check whether an input exam mark is within the range 0 and 100\nC - A data type check to ensure that the input made for the telephone number of the student contains only digits",
+    "options": [
+      "A only",
+      "B only",
+      "A and B only",
+      "A and C only",
+      "B and C only"
+    ],
+    "answer": 5,
+    "explanation": "Marks must lie in the allowed range and the telephone input can be checked for digits. Requiring marks for subjects not taken is inappropriate.",
+    "answerStatus": "worked",
+    "page": 1,
+    "sourceImage": "/questions/2023/q02.png"
+  },
+  {
+    "id": "2023-03",
+    "year": 2023,
+    "number": 3,
+    "source": "past-paper",
+    "topic": "computer-systems",
+    "prompt": "The existing book management system in a school library is used with a computer, a monitor, a keyboard and a mouse. The school management wants to minimize the time taken presently for book lending/returning. Which of the following is most suitable for this purpose?",
+    "options": [
+      "Using a digitizer",
+      "Using an external hard disk",
+      "Using a touch screen",
+      "Using a magnetic stripe reader",
+      "Using bar code technology"
+    ],
+    "answer": 5,
+    "explanation": "A barcode scanner captures book identifiers quickly and accurately during lending and returns.",
+    "answerStatus": "worked",
+    "page": 1,
+    "sourceImage": "/questions/2023/q03.png"
+  },
+  {
+    "id": "2023-04",
+    "year": 2023,
+    "number": 4,
+    "source": "past-paper",
+    "topic": "computer-systems",
+    "prompt": "Listed below are some phrases about the internal operation of three printers:\nA - a moving print head striking an ink ribbon against the paper\nB - toner attracting to what is printed on a cylinder which is then transferred to paper\nC - nozzles spraying ink onto paper\nWhich of the following correctly matches dot matrix, inkjet and laser printers to the above phrases?",
+    "options": [
+      "A - dot matrix, B - laser, C - inkjet",
+      "A - dot matrix, B - inkjet, C - laser",
+      "A - inkjet, B - dot matrix, C - laser",
+      "A - laser, B - dot matrix, C - inkjet",
+      "A - laser, B - inkjet, C - dot matrix"
+    ],
+    "answer": 1,
+    "explanation": "Dot matrix printers strike a ribbon, laser printers use toner and a drum, and inkjet printers spray ink through nozzles.",
+    "answerStatus": "worked",
+    "page": 1,
+    "sourceImage": "/questions/2023/q04.png"
+  },
+  {
+    "id": "2023-05",
+    "year": 2023,
+    "number": 5,
+    "source": "past-paper",
+    "topic": "operating-systems",
+    "prompt": "Which of the following will cause the CPU to execute a different set of instructions?\nA - a context switch\nB - an interrupt\nC - user selecting the shutdown option in the computer",
+    "options": [
+      "A only",
+      "B only",
+      "C only",
+      "A and B only",
+      "All A, B and C"
+    ],
+    "answer": 5,
+    "explanation": "A context switch changes the executing process, an interrupt invokes a handler, and shutdown invokes operating system shutdown instructions.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2023/q05.png"
+  },
+  {
+    "id": "2023-06",
+    "year": 2023,
+    "number": 6,
+    "source": "past-paper",
+    "topic": "computer-systems",
+    "prompt": "A program runs fastest when the data it requires are in the",
+    "options": [
+      "hard disk.",
+      "L1 cache.",
+      "L2 cache.",
+      "magnetic tape.",
+      "main memory."
+    ],
+    "answer": 2,
+    "explanation": "L1 cache has the lowest access latency among the listed storage locations.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2023/q06.png"
+  },
+  {
+    "id": "2023-07",
+    "year": 2023,
+    "number": 7,
+    "source": "past-paper",
+    "topic": "data-representation",
+    "prompt": "What is the correct binary equivalent of decimal 13.125₁₀?",
+    "options": [
+      "1100.001",
+      "1100.100",
+      "1101.001",
+      "1101.100",
+      "1101.101"
+    ],
+    "answer": 3,
+    "explanation": "13 is 1101 in binary and 0.125 = 1/8 = 0.001₂.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2023/q07.png"
+  },
+  {
+    "id": "2023-08",
+    "year": 2023,
+    "number": 8,
+    "source": "past-paper",
+    "topic": "data-representation",
+    "prompt": "Which of the following are equivalent to octal 674₈?\nA - 110 111 100₂\nB - 444₁₀\nC - 2BC₁₆",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 2,
+    "explanation": "674₈ = 6×64 + 7×8 + 4 = 444₁₀ = 110111100₂ = 1BC₁₆, not 2BC₁₆.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2023/q08.png"
+  },
+  {
+    "id": "2023-09",
+    "year": 2023,
+    "number": 9,
+    "source": "past-paper",
+    "topic": "data-representation",
+    "prompt": "The address of an instruction was shown as 5A1 in hexadecimal. What is that address in decimal?",
+    "options": [
+      "41",
+      "1441",
+      "1457",
+      "2641",
+      "23056"
+    ],
+    "answer": 2,
+    "explanation": "5A1₁₆ = 5×256 + 10×16 + 1 = 1441.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2023/q09.png"
+  },
+  {
+    "id": "2023-10",
+    "year": 2023,
+    "number": 10,
+    "source": "past-paper",
+    "topic": "data-representation",
+    "prompt": "A document contains 2048 characters including spaces and line-breaks. How many bits are needed to encode this document in ASCII also using the parity bits?",
+    "options": [
+      "2048",
+      "2048 × 2",
+      "2048 × 7",
+      "2048 × 8",
+      "2048 / 8"
+    ],
+    "answer": 4,
+    "explanation": "Standard ASCII uses seven data bits; one parity bit makes eight bits per character.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2023/q10.png"
+  },
+  {
+    "id": "2023-11",
+    "year": 2023,
+    "number": 11,
+    "source": "past-paper",
+    "topic": "data-representation",
+    "prompt": "What is the correct 2’s complement binary representation of decimal −49₁₀ using 8-bits?",
+    "options": [
+      "00110001",
+      "01100010",
+      "10011110",
+      "11001111",
+      "11100010"
+    ],
+    "answer": 4,
+    "explanation": "49 = 00110001₂. Inverting and adding one gives 11001111₂.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2023/q11.png"
+  },
+  {
+    "id": "2023-12",
+    "year": 2023,
+    "number": 12,
+    "source": "past-paper",
+    "topic": "digital-logic",
+    "prompt": "Consider the following logic circuit in which X indicates a two-input logic gate. A and B enter a NAND gate; its output is connected to both inputs of X, whose output is C.\nWhich of the following should X be so that when A = 0 and B = 1, the output C would be 0?\nI - a NAND gate\nII - a NOR gate\nIII - an XOR gate",
+    "options": [
+      "I only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "All I, II and III"
+    ],
+    "answer": 5,
+    "explanation": "The first NAND outputs 1. With inputs (1,1), NAND, NOR and XOR all output 0.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2023/q12.png",
+    "figure": "/questions/2023/q12.png"
+  },
+  {
+    "id": "2023-13",
+    "year": 2023,
+    "number": 13,
+    "source": "past-paper",
+    "topic": "digital-logic",
+    "prompt": "Which of the following is the simplified form of the Boolean expression X(X̅ + Y)?",
+    "options": [
+      "X",
+      "Y",
+      "XY",
+      "X̅Y",
+      "X + Y"
+    ],
+    "answer": 3,
+    "explanation": "Distributing gives XX̅ + XY = 0 + XY = XY.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2023/q13.png"
+  },
+  {
+    "id": "2023-14",
+    "year": 2023,
+    "number": 14,
+    "source": "past-paper",
+    "topic": "operating-systems",
+    "prompt": "A program in execution in a computer is called a process. Which of the following is a possible state transition sequence of such a process?",
+    "options": [
+      "New → Ready → Running → Terminated",
+      "New → Blocked → Terminated",
+      "New → Ready → Blocked → Running → Terminated",
+      "New → Running → Ready → Running → Terminated",
+      "New → Blocked → Ready → Running → Terminated"
+    ],
+    "answer": 1,
+    "explanation": "A new process is admitted to Ready, dispatched to Running, and can terminate after execution.",
+    "answerStatus": "worked",
+    "page": 2,
+    "sourceImage": "/questions/2023/q14.png"
+  },
+  {
+    "id": "2023-15",
+    "year": 2023,
+    "number": 15,
+    "source": "past-paper",
+    "topic": "operating-systems",
+    "prompt": "Amara powers on the computer and starts a spreadsheet application. Then he also opens a web browser. Which of the following are possible execution sequences on the processor of his computer?",
+    "options": [
+      "BIOS → OS → spreadsheet process → OS → web browser process → OS → ...",
+      "BIOS → spreadsheet process → OS → web browser process → OS → spreadsheet process → ...",
+      "BIOS → spreadsheet process → web browser process → OS → ...",
+      "BIOS → OS → spreadsheet process → web browser process → OS → ...",
+      "BIOS → OS → spreadsheet process → web browser process → spreadsheet process → web browser process → ..."
+    ],
+    "answer": 1,
+    "explanation": "The operating system starts after BIOS and manages transfers of execution between application processes.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2023/q15.png"
+  },
+  {
+    "id": "2023-16",
+    "year": 2023,
+    "number": 16,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Which of the following statements are true?\nA - A firewall acts as a packet filter inspecting all the packets entering a network.\nB - A malware that misleads the users by disguising itself as a standard program is termed a Trojan Horse.\nC - A strong password should have a combination of uppercase and lowercase letters, numbers and symbols of sufficient length.",
+    "options": [
+      "A only",
+      "B only",
+      "C only",
+      "A and B only",
+      "All A, B and C"
+    ],
+    "answer": 5,
+    "explanation": "The statements describe packet filtering, Trojan malware, and the password strength guidance used in this syllabus.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2023/q16.png"
+  },
+  {
+    "id": "2023-17",
+    "year": 2023,
+    "number": 17,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Which of the following statements are true?\nA - One of the uses of encryption is to ensure confidentiality of transmitted data.\nB - Every user needs to have a pair of dissimilar keys when using Asymmetric Key Encryption.\nC - Users must share a common key when exchanging information using Symmetric Key Encryption.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 5,
+    "explanation": "Encryption provides confidentiality. Asymmetric encryption uses public/private key pairs, while symmetric encryption uses a shared secret key.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2023/q17.png"
+  },
+  {
+    "id": "2023-18",
+    "year": 2023,
+    "number": 18,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Which of the following is considered as an erroneously received byte in an even parity system?",
+    "options": [
+      "01010101",
+      "10010011",
+      "10110010",
+      "11011001",
+      "11010111"
+    ],
+    "answer": 4,
+    "explanation": "11011001 contains five 1 bits, an odd count; the other bytes have even numbers of 1 bits.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2023/q18.png"
+  },
+  {
+    "id": "2023-19",
+    "year": 2023,
+    "number": 19,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Match the Devices labelled from A to E to the corresponding Descriptions labelled from 1 to 5.\nDevices: A - Client; B - Hub; C - Router; D - Server; E - Switch.\nDescriptions:\n1 - stores network programs and data files for the users to access\n2 - a connecting device between Local Area Networks (LAN) and Wide Area Networks (WAN)\n3 - when a message is received, this transmits it only on the port to which the destination computer is attached\n4 - requests services and content from other computers\n5 - when a message is received, this broadcasts it on all ports to all attached hosts",
+    "options": [
+      "A - 1, B - 5, C - 4, D - 2, E - 3",
+      "A - 2, B - 4, C - 3, D - 5, E - 1",
+      "A - 3, B - 2, C - 1, D - 4, E - 5",
+      "A - 4, B - 5, C - 2, D - 1, E - 3",
+      "A - 5, B - 1, C - 2, D - 3, E - 4"
+    ],
+    "answer": 4,
+    "explanation": "Clients request services, hubs repeat to all ports, routers connect networks, servers provide resources, and switches forward to the destination port.",
+    "answerStatus": "worked",
+    "page": 3,
+    "sourceImage": "/questions/2023/q19.png",
+    "figure": "/questions/2023/q19.png"
+  },
+  {
+    "id": "2023-20",
+    "year": 2023,
+    "number": 20,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Select the answer containing the correct replacements for A and B in the following paragraph:\nIn the Internet, a host is identified by its IP address. In IPv4, each IP address consists of A bits to identify a host. The newer version named IPv6 consists of B bits in an IP address.",
+    "options": [
+      "A = 32, B = 48",
+      "A = 32, B = 128",
+      "A = 48, B = 32",
+      "A = 48, B = 128",
+      "A = 128, B = 32"
+    ],
+    "answer": 2,
+    "explanation": "IPv4 addresses contain 32 bits and IPv6 addresses contain 128 bits.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2023/q20.png"
+  },
+  {
+    "id": "2023-21",
+    "year": 2023,
+    "number": 21,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Which of the following statements regarding DNS (Domain Name System) are correct?\nA - It maps web addresses to IP addresses and vice versa.\nB - HTTP uses the services provided by the DNS.\nC - DNS maintains a hierarchy of domain names.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 5,
+    "explanation": "DNS supports name/address lookup, including reverse lookup, and uses a domain hierarchy. HTTP clients use DNS to resolve server names.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2023/q21.png"
+  },
+  {
+    "id": "2023-22",
+    "year": 2023,
+    "number": 22,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "Which of the following statements regarding IP addresses are correct?\nA - In class C networks, first octet value ranges from 192 through 223.\nB - IPv4 can assign addresses up to 4 million devices.\nC - 192.168.0.0 - 192.168.255.255 is a private IP address range.",
+    "options": [
+      "A only",
+      "B only",
+      "C only",
+      "A and B only",
+      "A and C only"
+    ],
+    "answer": 5,
+    "explanation": "Class C historically spans first octets 192–223 and 192.168.0.0/16 is private. IPv4 has about 4.3 billion possible addresses, not four million.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2023/q22.png"
+  },
+  {
+    "id": "2023-23",
+    "year": 2023,
+    "number": 23,
+    "source": "past-paper",
+    "topic": "networks",
+    "prompt": "If Suresh wants to send an encrypted message to be read only by Amara using asymmetric key encryption, then",
+    "options": [
+      "Suresh should encrypt his message using his public key.",
+      "Suresh should encrypt his message using his private key.",
+      "Suresh should encrypt his message using Amara’s public key.",
+      "Suresh should encrypt his message using Amara’s private key.",
+      "Suresh should encrypt his message using both private and public keys of Amara."
+    ],
+    "answer": 3,
+    "explanation": "Encrypting with Amara’s public key allows only the holder of Amara’s private key to decrypt.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2023/q23.png"
+  },
+  {
+    "id": "2023-24",
+    "year": 2023,
+    "number": 24,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Choose the option containing most suitable deployment types for the following systems:\nA - A new system to replace an existing air traffic control system at an airport\nB - A system for the customers of an island-wide supermarket chain to order goods online\nC - A system for the public to enter comments regarding the service experienced by them at an office",
+    "options": [
+      "A - direct, B - direct, C - parallel",
+      "A - direct, B - pilot, C - parallel",
+      "A - parallel, B - pilot, C - direct",
+      "A - parallel, B - parallel, C - parallel",
+      "A - parallel, B - parallel, C - pilot"
+    ],
+    "answer": 3,
+    "explanation": "Parallel running reduces risk for critical air traffic control; a supermarket chain can pilot at selected locations; a simple new feedback service can start directly.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2023/q24.png"
+  },
+  {
+    "id": "2023-25",
+    "year": 2023,
+    "number": 25,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Which of the following is a non-functional requirement for an e-commerce site?",
+    "options": [
+      "Being able to add items to the shopping cart",
+      "Being able to make payments online",
+      "Being able to view the items based on item category",
+      "Each item to be shown with a small image and a description",
+      "The e-commerce site to be accessible through popular web browsers"
+    ],
+    "answer": 5,
+    "explanation": "Compatibility with popular browsers is a quality constraint; the other choices specify site functions or displayed content.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2023/q25.png"
+  },
+  {
+    "id": "2023-26",
+    "year": 2023,
+    "number": 26,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "During which of the following is an application tested by its developers in a setting that closely resembles its intended deployment hardware, software, and network configuration environment?",
+    "options": [
+      "Acceptance testing",
+      "Integration testing",
+      "Parallel testing",
+      "System testing",
+      "Unit testing"
+    ],
+    "answer": 4,
+    "explanation": "System testing checks the complete application in an environment close to its intended deployment.",
+    "answerStatus": "worked",
+    "page": 4,
+    "sourceImage": "/questions/2023/q26.png"
+  },
+  {
+    "id": "2023-27",
+    "year": 2023,
+    "number": 27,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "A company considers developing a new software application for its use. The application is expected to re-engineer internal processes, improve collaboration, and enhance productivity. However, during the feasibility analysis, it was identified that the new software may face some resistance from employees who are accustomed to the existing processes. Which component of the feasibility study would have helped to get that information?",
+    "options": [
+      "economic feasibility",
+      "legal feasibility",
+      "operational feasibility",
+      "schedule feasibility",
+      "technical feasibility"
+    ],
+    "answer": 3,
+    "explanation": "Operational feasibility considers whether the proposed system will work within the organisation, including employee acceptance.",
+    "answerStatus": "worked",
+    "page": 5,
+    "sourceImage": "/questions/2023/q27.png"
+  },
+  {
+    "id": "2023-28",
+    "year": 2023,
+    "number": 28,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Select the option which includes most suitable replacements for the labels P to S in the following Data Flow Diagram of a library management system. See the source diagram. P is input from Member to Book Search; Q and R are inputs from Member to Book lending; S is input from Member to Book return.",
+    "options": [
+      "P - keyword, Q - member ID, R - book details, S - book details",
+      "P - keyword, Q - keyword, R - book details, S - member ID",
+      "P - keyword, Q - keyword, R - book details, S - keyword",
+      "P - member ID, Q - keyword, R - member ID, S - member ID",
+      "P - member ID, Q - member ID, R - book details, S - book details"
+    ],
+    "answer": 1,
+    "explanation": "Searching requires a keyword; lending requires the member ID and book details; returning identifies the book.",
+    "answerStatus": "worked",
+    "page": 5,
+    "sourceImage": "/questions/2023/q28.png",
+    "figure": "/questions/2023/q28.png"
+  },
+  {
+    "id": "2023-29",
+    "year": 2023,
+    "number": 29,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "Which of the following is incorrect about the waterfall model of software development?",
+    "options": [
+      "It allows developers to collect and implement requirements throughout the project.",
+      "It is not an iterative model.",
+      "It is suitable for software with well defined requirements.",
+      "It is easy to estimate the resources needed for a project.",
+      "No working product is available until the latter stages of the project."
+    ],
+    "answer": 1,
+    "explanation": "Classic waterfall establishes requirements early and proceeds through sequential stages rather than continuously collecting and implementing requirements.",
+    "answerStatus": "worked",
+    "page": 5,
+    "sourceImage": "/questions/2023/q29.png"
+  },
+  {
+    "id": "2023-30",
+    "year": 2023,
+    "number": 30,
+    "source": "past-paper",
+    "topic": "systems-analysis",
+    "prompt": "In addition to the required features, which of the following should also be considered when a government institution selects a Commercial Off-The-Shelf (COTS) software to be implemented island wide?\nA - cost to deploy, maintain, upgrade and modify\nB - ease of integration with existing systems\nC - after sales service from the vendor",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 5,
+    "explanation": "Lifetime costs, integration with existing systems, and vendor support all affect the suitability of COTS software.",
+    "answerStatus": "worked",
+    "page": 5,
+    "sourceImage": "/questions/2023/q30.png"
+  },
+  {
+    "id": "2023-31",
+    "year": 2023,
+    "number": 31,
+    "source": "past-paper",
+    "topic": "databases",
+    "prompt": "Match the given entity attributes labelled from A to D to the corresponding descriptions labelled from 1 to 4.\nA - Composite attribute\nB - Simple attribute\nC - Multivalued attribute\nD - Derived attribute\n1 - an attribute that cannot be broken down into smaller components\n2 - an attribute that can be broken down into component parts\n3 - an attribute whose values can be calculated from related attribute values\n4 - an attribute that may take more than one value",
+    "options": [
+      "A-2, B-1, C-3, D-4",
+      "A-2, B-1, C-4, D-3",
+      "A-3, B-4, C-2, D-1",
+      "A-4, B-2, C-3, D-1",
+      "A-4, B-3, C-1, D-2"
+    ],
+    "answer": 2,
+    "explanation": "Composite attributes have component parts, simple attributes cannot be decomposed, multivalued attributes permit multiple values, and derived attributes are calculated.",
+    "answerStatus": "worked",
+    "page": 6,
+    "sourceImage": "/questions/2023/q31.png",
+    "figure": "/questions/2023/q31.png"
+  },
+  {
+    "id": "2023-32",
+    "year": 2023,
+    "number": 32,
+    "source": "past-paper",
+    "topic": "databases",
+    "prompt": "Consider the following Employee Relation:\nEmployee_ID | Employee_Name | Salary\n1001 | John | 60000\n1002 | Hari | 55000\n1003 | Mahas | 70000\n1004 | Sarath | 65000\n1005 | Rajah | 75000\nWhat would be the output of the following SQL query when it is applied on the Employee relation?\nSELECT COUNT(*)\nFROM Employee\nWHERE Salary > ANY (SELECT Salary FROM Employee);",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Salary > ANY is true for every salary greater than at least one listed salary, so all four salaries above the minimum 55000 qualify.",
+    "answerStatus": "worked",
+    "page": 6,
+    "sourceImage": "/questions/2023/q32.png",
+    "figure": "/questions/2023/q32.png"
+  },
+  {
+    "id": "2023-33",
+    "year": 2023,
+    "number": 33,
+    "source": "past-paper",
+    "topic": "databases",
+    "prompt": "Consider the given SQL statements to create two database tables named LENDING and STUDENT:\nCREATE TABLE LENDING\n(BOOK_NUMBER VARCHAR(10) NOTNULL,\n BOOK_NAME VARCHAR(20) NOTNULL,\n AUTHOR VARCHAR(25) NOTNULL,\n DESCRIPTION VARCHAR(75) NOTNULL,\n ISSUED_DATE DATE,\n STUDENT_ID CHAR(5) NOTNULL,\n PRIMARY KEY(BOOK_NUMBER));\n\nCREATE TABLE STUDENT\n(STUDENT_ID CHAR(5) NOTNULL,\n NAME VARCHAR(25) NOTNULL,\n BIRTHDAY DATE NOTNULL,\n ADDRESS VARCHAR(25) NOTNULL,\n PROVINCE CHAR(10),\n PRIMARY KEY(STUDENT_ID));\n\nWhich of the following statements are correct?\nA - STUDENT_ID is a foreign key in the LENDING table.\nB - It is compulsory to input data to the DATE datatype fields in both tables.\nC - STUDENT_ID can contain only five English letters.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": null,
+    "explanation": "Needs review: option 1 appears intended if LENDING.STUDENT_ID is assumed to reference STUDENT. However, the printed SQL declares no FOREIGN KEY or REFERENCES constraint. B is false because ISSUED_DATE permits NULL; C is false because CHAR(5) is not restricted to English letters. The source also prints NOTNULL without a space.",
+    "answerStatus": "needs-review",
+    "page": 6,
+    "sourceImage": "/questions/2023/q33.png",
+    "figure": "/questions/2023/q33.png"
+  },
+  {
+    "id": "2023-34",
+    "year": 2023,
+    "number": 34,
+    "source": "past-paper",
+    "topic": "databases",
+    "prompt": "When the Employee entity of the following diagram is represented in a database which of the following should not be included?\nThe diagram shows Employee with Date_of_Birth, Employee_Number, Employee_Name, Designation, derived Age, and multivalued Qualifications.",
+    "options": [
+      "Date_of_Birth",
+      "Designation",
+      "Employee_Name",
+      "Employee_Number",
+      "Qualifications"
+    ],
+    "answer": 5,
+    "explanation": "Qualifications is multivalued and should be represented in a separate relation rather than a single field in the Employee table. Age is also derived, but it is not one of the choices.",
+    "answerStatus": "worked",
+    "page": 7,
+    "sourceImage": "/questions/2023/q34.png",
+    "figure": "/questions/2023/q34.png"
+  },
+  {
+    "id": "2023-35",
+    "year": 2023,
+    "number": 35,
+    "source": "past-paper",
+    "topic": "databases",
+    "prompt": "Which of the listed relations will be obtained if the following ER diagram is correctly mapped into the relational model?\nThe diagram has Lecturer(NIC, LecturerName, DOB, Address), Course(CourseId, CourseName), and a 1:M Teaches relationship from Lecturer to Course with attribute Hours.\nA - Lecturer(NIC, LecturerName, DOB, Address)\nB - Lecturer(NIC, LecturerName, DOB, Address, CourseId)\nC - Teaches(NIC, CourseId, Hours)\nD - Course(CourseId, CourseName, Hours, NIC)",
+    "options": [
+      "A and B only",
+      "A and C only",
+      "A and D only",
+      "B and C only",
+      "A, C and D only"
+    ],
+    "answer": 3,
+    "explanation": "For a 1:M relationship, the one-side key NIC and relationship attribute Hours are included on the many-side Course relation; Lecturer retains its own attributes.",
+    "answerStatus": "worked",
+    "page": 7,
+    "sourceImage": "/questions/2023/q35.png",
+    "figure": "/questions/2023/q35.png"
+  },
+  {
+    "id": "2023-36",
+    "year": 2023,
+    "number": 36,
+    "source": "past-paper",
+    "topic": "databases",
+    "prompt": "Which of the following gives a correct matching between ER diagram components and the relational model?",
+    "options": [
+      "Entity → Field, Attribute → Table, Unique attribute → Primary key, Multivalued attribute → Table",
+      "Entity → Table, Attribute → Field, Unique attribute → Primary key, Multivalued attribute → Table",
+      "Entity → Table, Attribute → Field, Unique attribute → Table, Multivalued attribute → Primary key",
+      "Entity → Table, Attribute → Primary key, Unique attribute → Primary key, Multivalued attribute → Table",
+      "Entity → Table, Attribute → Table, Unique attribute → Primary key, Multivalued attribute → Primary key"
+    ],
+    "answer": 2,
+    "explanation": "Entities map to tables, attributes to fields, the selected unique identifier to the primary key, and multivalued attributes to separate tables.",
+    "answerStatus": "worked",
+    "page": 7,
+    "sourceImage": "/questions/2023/q36.png"
+  },
+  {
+    "id": "2023-37",
+    "year": 2023,
+    "number": 37,
+    "source": "past-paper",
+    "topic": "databases",
+    "prompt": "Consider the following relations to answer questions 37 and 38. Primary keys are adviser.adId, farmer.farmerId, task.taskId, and the composite (adId, taskId) in advises.\nadviser (adId, adName, adGender, adNIC, adPhone)\nfarmer (farmerId, farmerName, farmerAddress, farmerPhone)\ntask (taskId, taskName, farmerId, startDate, endDate)\nadvises (adId, taskId, startDate, endDate)\nNote: adNIC - The National Identity Card number of an adviser\n\nWhich of the following statements are correct?\nA - One farmer can have many tasks.\nB - One adviser can advise many tasks.\nC - For one task, a farmer can have many advisers.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C"
+    ],
+    "answer": 5,
+    "explanation": "Each task references a farmer, allowing many tasks per farmer. The advises relation permits many tasks per adviser and many advisers per task.",
+    "answerStatus": "worked",
+    "page": 7,
+    "sourceImage": "/questions/2023/q37.png",
+    "figure": "/questions/2023/q37.png"
+  },
+  {
+    "id": "2023-38",
+    "year": 2023,
+    "number": 38,
+    "source": "past-paper",
+    "topic": "databases",
+    "prompt": "Consider the following relations to answer questions 37 and 38. Primary keys are adviser.adId, farmer.farmerId, task.taskId, and the composite (adId, taskId) in advises.\nadviser (adId, adName, adGender, adNIC, adPhone)\nfarmer (farmerId, farmerName, farmerAddress, farmerPhone)\ntask (taskId, taskName, farmerId, startDate, endDate)\nadvises (adId, taskId, startDate, endDate)\nNote: adNIC - The National Identity Card number of an adviser\n\nWhich of the following statements are correct with respect to the given relations?\nA - All relations are in 3rd normal form.\nB - The startDate attribute in the task relation is a derived attribute.\nC - adNIC is a candidate key in the adviser relation.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C only"
+    ],
+    "answer": 3,
+    "explanation": "With the stated keys and the usual dependencies implied by the schema, the relations are in 3NF. A start date is stored rather than derived; a National Identity Card number uniquely identifies an adviser and is a candidate key.",
+    "answerStatus": "worked",
+    "page": 8,
+    "sourceImage": "/questions/2023/q38.png",
+    "figure": "/questions/2023/q38.png"
+  },
+  {
+    "id": "2023-39",
+    "year": 2023,
+    "number": 39,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "What would be the output of the following Python code, if a = 10, b = 4, and c = 7?\nans = a % b + c // (a-b)\nprint(ans)",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "10 % 4 = 2 and 7 // 6 = 1, so ans = 3.",
+    "answerStatus": "worked",
+    "page": 8,
+    "sourceImage": "/questions/2023/q39.png"
+  },
+  {
+    "id": "2023-40",
+    "year": 2023,
+    "number": 40,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "What would be the value of the 'result' variable after executing the following Python code?\ndef func1(a,b):\n    return a+b\n\ndef func2(a,b):\n    return a*b\n\nresult = func1(3,func2(2,4))",
+    "options": [
+      "11",
+      "12",
+      "14",
+      "15",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "func2(2,4) returns 8, then func1(3,8) returns 11.",
+    "answerStatus": "worked",
+    "page": 8,
+    "sourceImage": "/questions/2023/q40.png"
+  },
+  {
+    "id": "2023-41",
+    "year": 2023,
+    "number": 41,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "What would be the output of the following Python code, when it gets executed?\ndef modify_string(input_string):\n    input_string += \" World\"\ntext = \"Hello\"\nmodify_string(text)\nprint(text)",
+    "options": [
+      "Hello",
+      "Hello Hello",
+      "Hello World",
+      "World",
+      "World Hello"
+    ],
+    "answer": 1,
+    "explanation": "Strings are immutable. The function rebinds its local parameter, leaving the caller’s text equal to Hello.",
+    "answerStatus": "worked",
+    "page": 8,
+    "sourceImage": "/questions/2023/q41.png"
+  },
+  {
+    "id": "2023-42",
+    "year": 2023,
+    "number": 42,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "What would be the output of the following Python code?\noriginal_list = [1,2,3,4,5]\nnew_list = original_list.copy()\nnew_list.clear()\noriginal_list.append(6)\nprint(original_list)\nprint(new_list)",
+    "options": [
+      "[]\n[]",
+      "[6]\n[]",
+      "[6]\n[6]",
+      "[1, 2, 3, 4, 5, 6]\n[]",
+      "[]\n[1, 2, 3, 4, 5, 6]"
+    ],
+    "answer": 4,
+    "explanation": "copy() makes a separate list. Clearing the copy leaves the original intact; appending 6 changes only the original.",
+    "answerStatus": "worked",
+    "page": 8,
+    "sourceImage": "/questions/2023/q42.png"
+  },
+  {
+    "id": "2023-43",
+    "year": 2023,
+    "number": 43,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "How many '*'s does this program output?\ni = 7\nwhile i > 0:\n    i -= 3\n    print('*')\n    if i <= 2:\n        break\n    else:\n        print('*')",
+    "options": [
+      "1",
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "On the first iteration i becomes 4 and two stars print. On the second, i becomes 1, one star prints and break exits: three stars total.",
+    "answerStatus": "worked",
+    "page": 9,
+    "sourceImage": "/questions/2023/q43.png",
+    "figure": "/questions/2023/q43.png"
+  },
+  {
+    "id": "2023-44",
+    "year": 2023,
+    "number": 44,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "Which of the data structure among Dictionary, List and Tuple in Python could be used to store a collection of key-value pairs where the keys must be unique?",
+    "options": [
+      "Dictionary only",
+      "List only",
+      "Tuple only",
+      "Dictionary and List only",
+      "List and Tuple only"
+    ],
+    "answer": 1,
+    "explanation": "A dictionary is Python’s key-value mapping structure and enforces unique keys.",
+    "answerStatus": "worked",
+    "page": 9,
+    "sourceImage": "/questions/2023/q44.png"
+  },
+  {
+    "id": "2023-45",
+    "year": 2023,
+    "number": 45,
+    "source": "past-paper",
+    "topic": "programming",
+    "prompt": "What would be the output of the following python code?\nfor i in range(1, 4):\n    for j in range(1, i + 1):\n        print(j * i, end=' ')\n    print()",
+    "options": [
+      "1\n2 2\n3 3 3",
+      "1\n2 4\n3 6",
+      "1\n2 4\n3 6 9",
+      "1 2 3\n2 4 6\n3 6 9",
+      "1 2\n2 4 6\n3 6 9 12"
+    ],
+    "answer": 3,
+    "explanation": "For each i from 1 to 3, j runs from 1 through i and prints j×i, producing rows 1; 2 4; and 3 6 9.",
+    "answerStatus": "worked",
+    "page": 9,
+    "sourceImage": "/questions/2023/q45.png",
+    "figure": "/questions/2023/q45.png"
+  },
+  {
+    "id": "2023-46",
+    "year": 2023,
+    "number": 46,
+    "source": "past-paper",
+    "topic": "web-development",
+    "prompt": "Consider the following code fragment in an HTML file:\n<style>\n    body {\n        color: yellow;\n        font-family: Arial, Cambria;\n    }\n    .highlight {\n        color: red;\n    }\n</style>\nWhat happens if one applies the class ‘highlight’ to a <div> element within <html> and </html> tags in the above file?",
+    "options": [
+      "The <div> element's text will turn red.",
+      "The <div> element's text will turn yellow.",
+      "The <div> element's font size will increase.",
+      "The <div> element's font type will change to Cambria.",
+      "The <div> element's border colour will change to red."
+    ],
+    "answer": 1,
+    "explanation": "The .highlight rule explicitly sets the element’s text colour to red, overriding the inherited body colour.",
+    "answerStatus": "worked",
+    "page": 9,
+    "sourceImage": "/questions/2023/q46.png"
+  },
+  {
+    "id": "2023-47",
+    "year": 2023,
+    "number": 47,
+    "source": "past-paper",
+    "topic": "web-development",
+    "prompt": "Which of the following statements regarding Search Engine Optimization (SEO) are correct?\nA - Meta tags on web pages help SEO.\nB - It increases the visibility of a web page in search engines.\nC - Powerful computers should be used to create SEO friendly web pages.",
+    "options": [
+      "A only",
+      "A and B only",
+      "A and C only",
+      "B and C only",
+      "All A, B and C only"
+    ],
+    "answer": 2,
+    "explanation": "Appropriate metadata can support search presentation and SEO aims to improve search visibility. Creating SEO-friendly pages does not require powerful computers.",
+    "answerStatus": "worked",
+    "page": 9,
+    "sourceImage": "/questions/2023/q47.png"
+  },
+  {
+    "id": "2023-48",
+    "year": 2023,
+    "number": 48,
+    "source": "past-paper",
+    "topic": "web-development",
+    "prompt": "Consider the following HTML code line related to a form:\n<form method=\"post\" action=\"process.php\">\nThe “action” attribute in it",
+    "options": [
+      "specifies the data type of the form.",
+      "specifies the server file that handles the data in the form.",
+      "controls the form's alignment on the web page.",
+      "declares the form as a PHP script.",
+      "shows the process.php file on the screen."
+    ],
+    "answer": 2,
+    "explanation": "The action attribute specifies the URL to which the browser submits the form data for processing.",
+    "answerStatus": "worked",
+    "page": 10,
+    "sourceImage": "/questions/2023/q48.png"
+  },
+  {
+    "id": "2023-49",
+    "year": 2023,
+    "number": 49,
+    "source": "past-paper",
+    "topic": "web-development",
+    "prompt": "Saman’s father is a carpenter. He wants to showcase his father’s work on a website. Which of the following hosting options should Saman use in order to do it with a price that he can afford?",
+    "options": [
+      "Hosting it on a server that presents other websites also (shared hosting)",
+      "Hosting it on a Virtual Private Server (VPS)",
+      "Hosting it on a server dedicated to Saman (dedicated hosting)",
+      "Using an e-Commerce website",
+      "Using the services of a well known cloud service provider"
+    ],
+    "answer": 1,
+    "explanation": "Shared hosting spreads server costs among multiple websites and is the intended economical choice for this simple showcase site.",
+    "answerStatus": "worked",
+    "page": 10,
+    "sourceImage": "/questions/2023/q49.png"
+  },
+  {
+    "id": "2023-50",
+    "year": 2023,
+    "number": 50,
+    "source": "past-paper",
+    "topic": "emerging-technologies",
+    "prompt": "What is the primary role of a sensor in an IoT device?",
+    "options": [
+      "To provide outputs and change a state of the environment",
+      "To ensure interoperability of devices",
+      "To detect a state change in the environment",
+      "To make decisions based on predetermined rules",
+      "To generate graphics for the user interface"
+    ],
+    "answer": 3,
+    "explanation": "A sensor detects or measures physical conditions in the environment; actuators perform physical changes.",
+    "answerStatus": "worked",
+    "page": 10,
+    "sourceImage": "/questions/2023/q50.png"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {"id":"ict-fundamentals","name":"ICT fundamentals","short":"ICT fundamentals","unit":"01","description":"Data, information, software and the role of ICT"},
+  {"id":"computer-systems","name":"Computer systems","short":"Computer systems","unit":"02","description":"Architecture, processors, memory and devices"},
+  {"id":"data-representation","name":"Data representation","short":"Data representation","unit":"03","description":"Number systems, encoding and binary arithmetic"},
+  {"id":"digital-logic","name":"Digital logic","short":"Digital logic","unit":"04","description":"Logic gates, Boolean algebra and circuits"},
+  {"id":"operating-systems","name":"Operating systems","short":"Operating systems","unit":"05","description":"Processes, scheduling, storage and memory management"},
+  {"id":"networks","name":"Data communication & networks","short":"Networks","unit":"06","description":"Protocols, addressing, transmission and network security"},
+  {"id":"systems-analysis","name":"Systems analysis & design","short":"Systems analysis","unit":"07","description":"Requirements, modelling, development and testing"},
+  {"id":"databases","name":"Database management","short":"Databases","unit":"08","description":"Relational models, normalization and SQL"},
+  {"id":"programming","name":"Programming & algorithms","short":"Programming","unit":"09","description":"Python, control structures, algorithms and problem solving"},
+  {"id":"web-development","name":"Web development","short":"Web development","unit":"10","description":"HTML, CSS, web applications and the web"},
+  {"id":"information-systems","name":"Information systems & society","short":"Information systems","unit":"11","description":"Business systems, e-commerce, ethics and digital society"},
+  {"id":"emerging-technologies","name":"Emerging technologies","short":"Emerging technologies","unit":"12","description":"AI, IoT, cloud computing and intelligent systems"}
+]
